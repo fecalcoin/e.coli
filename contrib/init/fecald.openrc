@@ -19,7 +19,7 @@ FECALD_NICE=${FECALD_NICE:-${NICELEVEL:-0}}
 FECALD_OPTS="${FECALD_OPTS:-${FECAL_OPTS}}"
 
 name="Fecal E.coli Daemon"
-description="Raven cryptocurrency P2P network daemon"
+description="Fecal cryptocurrency P2P network daemon"
 
 command="/usr/bin/fecald"
 command_args="-pid=\"${FECALD_PIDFILE}\" \
@@ -84,7 +84,7 @@ checkconfig()
 		eerror "It is recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Raven Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Fecal Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

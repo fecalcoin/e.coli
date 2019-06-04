@@ -64,7 +64,7 @@ public:
 };
 
 /**
- * Raven protocol message types. When adding new message types, don't forget
+ * Fecal protocol message types. When adding new message types, don't forget
  * to update allNetMessageTypes in protocol.cpp.
  */
 namespace NetMsgType {
@@ -276,7 +276,7 @@ enum ServiceFlags : uint64_t {
     // network services but don't provide them.
     NODE_NETWORK = (1 << 0),
     // NODE_GETUTXO means the node is capable of responding to the getutxo protocol request.
-    // Fecal E.coli does not support this but a patch set called Raven XT does.
+    // Fecal E.coli does not support this but a patch set called Fecal XT does.
     // See BIP 64 for details on how this is implemented.
     NODE_GETUTXO = (1 << 1),
     // NODE_BLOOM means the node is capable and willing to handle bloom-filtered connections.

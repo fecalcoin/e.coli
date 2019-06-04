@@ -10,12 +10,12 @@ The solution is to speed up adoption is to run fecald in compatibility mode that
 
 As an example, normally the rpc call for transferring SHIT is   
 ```sendfrom "fromaccount" "toaddress" amount ( minconf "comment" "comment_to" )```   
-Ordinarily this call to fecald (port 8766) will transfer SHIT
+Ordinarily this call to fecald (port 8883) will transfer SHIT
 
 Configuring a different port for sending the TRONCO token will allow the same RPC call to transfer TRONCO instead of SHIT.  The advantage is that the only change needed for compatibility with a system that can already handle BTC and SHIT is to use the port configured for TRONCO, or whatever asset you'd like.
 
 ### Configuration
-Every Bitcoin-type, or Fecalcoin-type coin uses a different RPC port.  For example, the standard RPC port for Bitcoin is 8332, and the standard RPC port for Fecalcoin is 8766.
+Every Bitcoin-type, or Fecalcoin-type coin uses a different RPC port.  For example, the standard RPC port for Bitcoin is 8332, and the standard RPC port for Fecalcoin is 8883.
 
 An exchange can configure multiple Fecalcoin assets by selecting a different port for each asset.  Once configured, fecald will emulate a fecald daemon with RPC calls that send the specified asset, instead of SHIT.
 

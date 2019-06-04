@@ -38,7 +38,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/devrandom/gitian-builder.git
     git clone https://github.com/RavenProject/Fecalcoin.git
 
-### Raven maintainers/release engineers, suggestion for writing release notes
+### Fecal maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -275,14 +275,14 @@ fecal.org (see below for fecal.org update instructions).
 
 - Update fecal.org version
 
-  - First, check to see if the Raven.org maintainers have prepared a
+  - First, check to see if the Fecal.org maintainers have prepared a
     release: https://github.com/fecal-dot-org/fecal.org/labels/Releases
 
       - If they have, it will have previously failed their Travis CI
         checks because the final release files weren't uploaded.
         Trigger a Travis CI rebuild---if it passes, merge.
 
-  - If they have not prepared a release, follow the Raven.org release
+  - If they have not prepared a release, follow the Fecal.org release
     instructions: https://github.com/fecal-dot-org/fecal.org#release-notes
 
   - After the pull request is merged, the website will automatically show the newest version within 15 minutes, as well
@@ -298,7 +298,7 @@ fecal.org (see below for fecal.org update instructions).
 
   - Update title of #fecal on Freenode IRC
 
-  - Optionally twitter, reddit /r/Raven, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/Fecal, ... but this will usually sort out itself
 
   - Notify BlueMatt so that he can start building [the PPAs](https://launchpad.net/~fecal/+archive/ubuntu/fecal)
 

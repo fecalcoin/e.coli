@@ -70,7 +70,7 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>Raven</source>
+        <source>Fecal</source>
         <translation>Биткоин</translation>
     </message>
     <message>

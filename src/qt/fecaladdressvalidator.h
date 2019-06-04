@@ -21,7 +21,7 @@ public:
     State validate(QString &input, int &pos) const;
 };
 
-/** Raven address widget validator, checks for a valid fecal address.
+/** Fecal address widget validator, checks for a valid fecal address.
  */
 class RavenAddressCheckValidator : public QValidator
 {

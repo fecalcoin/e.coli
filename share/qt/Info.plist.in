@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Raven-Qt</string>
+  <string>Fecal-Qt</string>
   
   <key>CFBundleName</key>
-  <string>Raven-Qt</string>
+  <string>Fecal-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.fecalfoundation.Raven-Qt</string>
+  <string>org.fecalfoundation.Fecal-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -60,7 +60,7 @@
       <key>UTTypeIdentifier</key>
       <string>org.fecal.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Raven payment request</string>
+      <string>Fecal payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>

@@ -28,7 +28,7 @@ class QMenu;
 class QItemSelection;
 QT_END_NAMESPACE
 
-/** Local Raven RPC console. */
+/** Local Fecal RPC console. */
 class RPCConsole: public QWidget
 {
     Q_OBJECT

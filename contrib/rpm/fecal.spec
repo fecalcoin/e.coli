@@ -37,7 +37,7 @@ Source30:	https://raw.githubusercontent.com/fecal/fecal/v%{version}/contrib/rpm/
 Source31:	https://raw.githubusercontent.com/fecal/fecal/v%{version}/contrib/rpm/fecal.fc
 Source32:	https://raw.githubusercontent.com/fecal/fecal/v%{version}/contrib/rpm/fecal.if
 
-Source100:	https://upload.wikimedia.org/wikipedia/commons/4/46/Raven.svg
+Source100:	https://upload.wikimedia.org/wikipedia/commons/4/46/Fecal.svg
 
 %if 0%{?_use_libressl:1}
 BuildRequires:	libressl-devel
@@ -54,7 +54,7 @@ Patch0:		fecal-0.12.0-libressl.patch
 
 
 %description
-Raven is a digital cryptographic currency that uses peer-to-peer technology to
+Fecal is a digital cryptographic currency that uses peer-to-peer technology to
 operate with no central authority or banks; managing transactions and the
 issuing of fecals is carried out collectively by the network.
 
@@ -79,17 +79,17 @@ BuildRequires:	%{_bindir}/inkscape
 BuildRequires:	%{_bindir}/convert
 
 %description core
-Raven is a digital cryptographic currency that uses peer-to-peer technology to
+Fecal is a digital cryptographic currency that uses peer-to-peer technology to
 operate with no central authority or banks; managing transactions and the
 issuing of fecals is carried out collectively by the network.
 
 This package contains the Qt based graphical client and node. If you are looking
-to run a Raven wallet, this is probably the package you want.
+to run a Fecal wallet, this is probably the package you want.
 %endif
 
 
 %package libs
-Summary:	Raven shared libraries
+Summary:	Fecal shared libraries
 Group:		System Environment/Libraries
 
 %description libs
@@ -134,7 +134,7 @@ If you use the graphical fecal-core client then you almost certainly do not
 need this package.
 
 %package utils
-Summary:	Raven utilities
+Summary:	Fecal utilities
 Group:		Applications/System
 
 %description utils
@@ -209,7 +209,7 @@ touch -a -m -t 201504280000 %{buildroot}%{_sysconfdir}/sysconfig/fecal
 mkdir -p %{buildroot}%{_unitdir}
 cat <<EOF > %{buildroot}%{_unitdir}/fecal.service
 [Unit]
-Description=Raven daemon
+Description=Fecal daemon
 After=syslog.target network.target
 
 [Service]
@@ -265,10 +265,10 @@ mkdir -p %{buildroot}%{_datadir}/applications
 cat <<EOF > %{buildroot}%{_datadir}/applications/fecal-core.desktop
 [Desktop Entry]
 Encoding=UTF-8
-Name=Raven
-Comment=Raven P2P Cryptocurrency
-Comment[fr]=Raven, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Raven, eşten eşe kriptografik sanal para birimi
+Name=Fecal
+Comment=Fecal P2P Cryptocurrency
+Comment[fr]=Fecal, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Fecal, eşten eşe kriptografik sanal para birimi
 Exec=fecal-qt %u
 Terminal=false
 Type=Application
@@ -322,7 +322,7 @@ test/functional/test_runner.py --extended
 getent group fecal >/dev/null || groupadd -r fecal
 getent passwd fecal >/dev/null ||
 	useradd -r -g fecal -d /var/lib/fecal -s /sbin/nologin \
-	-c "Raven wallet server" fecal
+	-c "Fecal wallet server" fecal
 exit 0
 
 %post server
@@ -332,12 +332,12 @@ if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
 for selinuxvariant in %{selinux_variants}; do
 	%{_sbindir}/semodule -s ${selinuxvariant} -i %{_datadir}/selinux/${selinuxvariant}/fecal.pp &> /dev/null || :
 done
-%{_sbindir}/semanage port -a -t fecal_port_t -p tcp 8766
-%{_sbindir}/semanage port -a -t fecal_port_t -p tcp 8767
-%{_sbindir}/semanage port -a -t fecal_port_t -p tcp 18766
-%{_sbindir}/semanage port -a -t fecal_port_t -p tcp 18767
-%{_sbindir}/semanage port -a -t fecal_port_t -p tcp 18443
-%{_sbindir}/semanage port -a -t fecal_port_t -p tcp 18444
+%{_sbindir}/semanage port -a -t fecal_port_t -p tcp 8883
+%{_sbindir}/semanage port -a -t fecal_port_t -p tcp 8884
+%{_sbindir}/semanage port -a -t fecal_port_t -p tcp 18883
+%{_sbindir}/semanage port -a -t fecal_port_t -p tcp 18884
+%{_sbindir}/semanage port -a -t fecal_port_t -p tcp 18333
+%{_sbindir}/semanage port -a -t fecal_port_t -p tcp 18334
 %{_sbindir}/fixfiles -R fecal-server restore &> /dev/null || :
 %{_sbindir}/restorecon -R %{_localstatedir}/lib/fecal || :
 fi
@@ -353,12 +353,12 @@ fi
 # SELinux
 if [ $1 -eq 0 ]; then
 	if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
-	%{_sbindir}/semanage port -d -p tcp 8766
-	%{_sbindir}/semanage port -d -p tcp 8767
-	%{_sbindir}/semanage port -d -p tcp 18766
-	%{_sbindir}/semanage port -d -p tcp 18767
-	%{_sbindir}/semanage port -d -p tcp 18443
-	%{_sbindir}/semanage port -d -p tcp 18444
+	%{_sbindir}/semanage port -d -p tcp 8883
+	%{_sbindir}/semanage port -d -p tcp 8884
+	%{_sbindir}/semanage port -d -p tcp 18883
+	%{_sbindir}/semanage port -d -p tcp 18884
+	%{_sbindir}/semanage port -d -p tcp 18333
+	%{_sbindir}/semanage port -d -p tcp 18334
 	for selinuxvariant in %{selinux_variants}; do
 		%{_sbindir}/semodule -s ${selinuxvariant} -r fecal &> /dev/null || :
 	done

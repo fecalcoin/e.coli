@@ -15,7 +15,7 @@ Also test that nodes that send unsupported service bits to fecald are disconnect
 and don't receive a VERACK. Unsupported service bits are currently 1 << 5 and
 1 << 7 (until August 1st 2018).
 
-UPDATE: Raven RIP-2 uses bit 1 << 5.  Currently there are no unsupported service bits.
+UPDATE: Fecal RIP-2 uses bit 1 << 5.  Currently there are no unsupported service bits.
 """
 
 from test_framework.mininode import *

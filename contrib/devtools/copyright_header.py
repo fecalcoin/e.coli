@@ -88,7 +88,7 @@ EXPECTED_HOLDER_NAMES = [
     "The Fecal E.coli developers \n",
     "Fecal E.coli Developers\n",
     "the Fecal E.coli developers\n",
-    "The Raven developers\n",
+    "The Fecal developers\n",
     "The LevelDB Authors\. All rights reserved\.\n",
     "BitPay Inc\.\n",
     "BitPay, Inc\.\n",
@@ -587,7 +587,7 @@ def insert_cmd(argv):
 ################################################################################
 
 USAGE = """
-copyright_header.py - utilities for managing copyright headers of 'The Raven
+copyright_header.py - utilities for managing copyright headers of 'The Fecal
 Core developers' in repository source files.
 
 Usage:

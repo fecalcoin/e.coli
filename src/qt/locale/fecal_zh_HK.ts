@@ -157,7 +157,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FECALS&lt;/b&gt;!</source>
-        <translation>警告: 如果你將錢包加密後又忘記密碼，你就會&lt;b&gt;失去所有 Raven 了&lt;/b&gt;！</translation>
+        <translation>警告: 如果你將錢包加密後又忘記密碼，你就會&lt;b&gt;失去所有 Fecal 了&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -310,8 +310,8 @@
         <translation>正在為磁碟區塊重建索引...</translation>
     </message>
     <message>
-        <source>Send coins to a Raven address</source>
-        <translation>付款至一個 Raven 位址</translation>
+        <source>Send coins to a Fecal address</source>
+        <translation>付款至一個 Fecal 位址</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -334,8 +334,8 @@
         <translation>驗證訊息... &amp;V</translation>
     </message>
     <message>
-        <source>Raven</source>
-        <translation>Raven</translation>
+        <source>Fecal</source>
+        <translation>Fecal</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -440,8 +440,8 @@
 <context>
     <name>QObject</name>
     <message>
-        <source>Enter a Raven address (e.g. %1)</source>
-        <translation>輸入一個 Raven 位址 (例如 %1)</translation>
+        <source>Enter a Fecal address (e.g. %1)</source>
+        <translation>輸入一個 Fecal 位址 (例如 %1)</translation>
     </message>
     <message>
         <source>%1 d</source>

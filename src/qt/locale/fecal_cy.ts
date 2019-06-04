@@ -114,8 +114,8 @@
         <translation>Newid y cyfrinymadrodd a ddefnyddiwyd ar gyfer amgryptio'r waled</translation>
     </message>
     <message>
-        <source>Raven</source>
-        <translation>Raven</translation>
+        <source>Fecal</source>
+        <translation>Fecal</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -485,7 +485,7 @@
     </message>
     <message>
         <source>Fecal E.coli</source>
-        <translation>Craidd Raven</translation>
+        <translation>Craidd Fecal</translation>
     </message>
     <message>
         <source>Information</source>

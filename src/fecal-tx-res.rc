@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Raven"
-            VALUE "FileDescription",    "fecal-tx (CLI Raven transaction editor utility)"
+            VALUE "CompanyName",        "Fecal"
+            VALUE "FileDescription",    "fecal-tx (CLI Fecal transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "fecal-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR

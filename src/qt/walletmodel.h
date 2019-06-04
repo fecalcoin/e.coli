@@ -161,7 +161,7 @@ public:
     }
 };
 
-/** Interface to Raven wallet from Qt view code. */
+/** Interface to Fecal wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT

@@ -62,12 +62,12 @@
         <translation>S'estan rebent les adreces</translation>
     </message>
     <message>
-        <source>These are your Raven addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estes són les vostres adreces de Raven per enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
+        <source>These are your Fecal addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estes són les vostres adreces de Fecal per enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
     </message>
     <message>
-        <source>These are your Raven addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estes són les vostres adreces Raven per rebre pagaments. Es recomana utilitzar una adreça nova de recepció per a cada transacció.</translation>
+        <source>These are your Fecal addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estes són les vostres adreces Fecal per rebre pagaments. Es recomana utilitzar una adreça nova de recepció per a cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -298,8 +298,8 @@
         <translation>S'estan reindexant els blocs al disc...</translation>
     </message>
     <message>
-        <source>Send coins to a Raven address</source>
-        <translation>Envia monedes a una adreça Raven</translation>
+        <source>Send coins to a Fecal address</source>
+        <translation>Envia monedes a una adreça Fecal</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -322,8 +322,8 @@
         <translation>&amp;Verifica el missatge...</translation>
     </message>
     <message>
-        <source>Raven</source>
-        <translation>Raven</translation>
+        <source>Fecal</source>
+        <translation>Fecal</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -350,12 +350,12 @@
         <translation>Encripta les claus privades pertanyents al moneder</translation>
     </message>
     <message>
-        <source>Sign messages with your Raven addresses to prove you own them</source>
-        <translation>Signa el missatges amb la seua adreça de Raven per provar que les poseeixes</translation>
+        <source>Sign messages with your Fecal addresses to prove you own them</source>
+        <translation>Signa el missatges amb la seua adreça de Fecal per provar que les poseeixes</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Raven addresses</source>
-        <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça Raven específica.</translation>
+        <source>Verify messages to ensure they were signed with specified Fecal addresses</source>
+        <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça Fecal específica.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -658,8 +658,8 @@
         <translation>Edita les adreces d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Raven address.</source>
-        <translation>L'adreça introduïda «%1» no és una adreça de Raven vàlida.</translation>
+        <source>The entered address "%1" is not a valid Fecal address.</source>
+        <translation>L'adreça introduïda «%1» no és una adreça de Fecal vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -884,16 +884,16 @@
         <translation>&amp;Gasta el canvi sense confirmar</translation>
     </message>
     <message>
-        <source>Automatically open the Raven client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Obri el port del client de Raven al router de forma automàtica. Això només funciona quan el router implementa UPnP i l'opció està activada.</translation>
+        <source>Automatically open the Fecal client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Obri el port del client de Fecal al router de forma automàtica. Això només funciona quan el router implementa UPnP i l'opció està activada.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Port obert amb &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Raven network through a SOCKS5 proxy.</source>
-        <translation>Connecta a la xarxa Raven a través d'un proxy SOCKS5.</translation>
+        <source>Connect to the Fecal network through a SOCKS5 proxy.</source>
+        <translation>Connecta a la xarxa Fecal a través d'un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -995,8 +995,8 @@
         <translation>Formulari</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Raven network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa Raven un cop s'ha establit connexió, però este proces no s'ha completat encara.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fecal network after a connection is established, but this process has not completed yet.</source>
+        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa Fecal un cop s'ha establit connexió, però este proces no s'ha completat encara.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1086,8 +1086,8 @@
         <translation>Adreça de pagament no vàlida %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Raven address or malformed URI parameters.</source>
-        <translation>L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de Raven no vàlida o per paràmetres URI amb mal format.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Fecal address or malformed URI parameters.</source>
+        <translation>L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de Fecal no vàlida o per paràmetres URI amb mal format.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1172,8 +1172,8 @@
         <translation>Import</translation>
     </message>
     <message>
-        <source>Enter a Raven address (e.g. %1)</source>
-        <translation>Introduïu una adreça de Raven (p. ex. %1)</translation>
+        <source>Enter a Fecal address (e.g. %1)</source>
+        <translation>Introduïu una adreça de Fecal (p. ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1452,8 +1452,8 @@
         <translation>R&amp;eutilitza una adreça de recepció anterior (no recomanat)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Raven network.</source>
-        <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'òbriga la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa Raven.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fecal network.</source>
+        <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'òbriga la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa Fecal.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1813,8 +1813,8 @@
         <translation>La sol·licitud de pagament ha vençut.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Raven address</source>
-        <translation>Avís: adreça Raven no vàlida</translation>
+        <source>Warning: Invalid Fecal address</source>
+        <translation>Avís: adreça Fecal no vàlida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1848,8 +1848,8 @@
         <translation>Això és un pagament normal.</translation>
     </message>
     <message>
-        <source>The Raven address to send the payment to</source>
-        <translation>L'adreça Raven on enviar el pagament</translation>
+        <source>The Fecal address to send the payment to</source>
+        <translation>L'adreça Fecal on enviar el pagament</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1892,8 +1892,8 @@
         <translation>Introduïu una etiqueta per a esta adreça per afegir-la a la llista d'adreces utilitzades</translation>
     </message>
     <message>
-        <source>A message that was attached to the fecal: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Raven network.</source>
-        <translation>Un missatge que s'ha adjuntat al fecal: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Raven.</translation>
+        <source>A message that was attached to the fecal: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fecal network.</source>
+        <translation>Un missatge que s'ha adjuntat al fecal: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Fecal.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1937,8 +1937,8 @@
         <translation>Podeu signar missatges/acords amb les vostres adreces per provar que rebeu les fecals que s'hi envien. Aneu amb compte no signar res que siga vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
     </message>
     <message>
-        <source>The Raven address to sign the message with</source>
-        <translation>L'adreça Raven amb què signar el missatge</translation>
+        <source>The Fecal address to sign the message with</source>
+        <translation>L'adreça Fecal amb què signar el missatge</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1969,8 +1969,8 @@
         <translation>Copia la signatura actual al porta-retalls del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Raven address</source>
-        <translation>Signa el missatge per provar que ets propietari d'esta adreça Raven</translation>
+        <source>Sign the message to prove you own this Fecal address</source>
+        <translation>Signa el missatge per provar que ets propietari d'esta adreça Fecal</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1993,12 +1993,12 @@
         <translation>Introduïu l'adreça del receptor, el missatge (assegureu-vos de copiar els salts de línia, espais, tabuladors, etc. exactament) i signatura de sota per verificar el missatge. Tingueu cura de no llegir més en la signatura del que està al missatge signat, per evitar ser enganyat per un atac d'home-en-el-mig. Tingueu en compte que això només demostra que la part que signa rep amb l'adreça, i no es pot provar l'enviament de qualsevol transacció!</translation>
     </message>
     <message>
-        <source>The Raven address the message was signed with</source>
-        <translation>L'adreça Raven amb què va ser signat el missatge</translation>
+        <source>The Fecal address the message was signed with</source>
+        <translation>L'adreça Fecal amb què va ser signat el missatge</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Raven address</source>
-        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Raven específica</translation>
+        <source>Verify the message to ensure it was signed with the specified Fecal address</source>
+        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Fecal específica</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

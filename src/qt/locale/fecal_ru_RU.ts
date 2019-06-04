@@ -230,7 +230,7 @@
         <translation>&amp;Проверить сообщение...</translation>
     </message>
     <message>
-        <source>Raven</source>
+        <source>Fecal</source>
         <translation>Fecal E.coli</translation>
     </message>
     <message>
@@ -442,8 +442,8 @@
         <translation>Пробросить порт через &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Raven network through a SOCKS5 proxy.</source>
-        <translation>Подключится к сети Raven через SOCKS5 прокси.</translation>
+        <source>Connect to the Fecal network through a SOCKS5 proxy.</source>
+        <translation>Подключится к сети Fecal через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -522,8 +522,8 @@
 <context>
     <name>QObject</name>
     <message>
-        <source>Enter a Raven address (e.g. %1)</source>
-        <translation>Введите Raven-адрес (напр. %1)</translation>
+        <source>Enter a Fecal address (e.g. %1)</source>
+        <translation>Введите Fecal-адрес (напр. %1)</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>

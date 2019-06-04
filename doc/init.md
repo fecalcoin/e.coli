@@ -68,9 +68,9 @@ can then be controlled by group membership.
 ### Mac OS X
 
 Binary:              `/usr/local/bin/fecald`  
-Configuration file:  `~/Library/Application Support/Raven/fecal.conf`  
-Data directory:      `~/Library/Application Support/Raven`  
-Lock file:           `~/Library/Application Support/Raven/.lock`  
+Configuration file:  `~/Library/Application Support/Fecal/fecal.conf`  
+Data directory:      `~/Library/Application Support/Fecal`  
+Lock file:           `~/Library/Application Support/Fecal/.lock`  
 
 Installing Service Configuration
 -----------------------------------

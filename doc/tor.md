@@ -1,7 +1,7 @@
 TOR SUPPORT IN FECAL
 ======================
 
-It is possible to run Raven as a Tor hidden service, and connect to such services.
+It is possible to run Fecal as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many distributions default to having a SOCKS proxy listening on port 9050, but others may not. In particular, the Tor Browser Bundle defaults to listening on port 9150. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#TBBSocksPort) for how to properly
 configure Tor.
@@ -10,7 +10,7 @@ configure Tor.
 1. Run fecal behind a Tor proxy
 ---------------------------------
 
-The first step is running Raven behind a Tor proxy. This will already make all
+The first step is running Fecal behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 
 	-proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -42,11 +42,11 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file):
 
 	HiddenServiceDir /var/lib/tor/fecal-service/
-	HiddenServicePort 8767 127.0.0.1:8767
-	HiddenServicePort 18767 127.0.0.1:18767
+	HiddenServicePort 8884 127.0.0.1:8884
+	HiddenServicePort 18884 127.0.0.1:18884
 
 The directory can be different of course, but (both) port numbers should be equal to
-your fecald's P2P listen port (8767 by default).
+your fecald's P2P listen port (8884 by default).
 
 	-externalip=X   You can tell fecal about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
@@ -81,7 +81,7 @@ as well, use `discover` instead:
 
 	./fecald ... -discover
 
-and open port 8767 on your firewall (or use -upnp).
+and open port 8884 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:

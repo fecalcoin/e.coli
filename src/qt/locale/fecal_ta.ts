@@ -90,8 +90,8 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>Raven</source>
-        <translation>Raven</translation>
+        <source>Fecal</source>
+        <translation>Fecal</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -709,7 +709,7 @@
     <name>fecal-core</name>
     <message>
         <source>Fecal E.coli</source>
-        <translation>Raven மையம்</translation>
+        <translation>Fecal மையம்</translation>
     </message>
     <message>
         <source>(default: %u)</source>

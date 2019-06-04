@@ -126,7 +126,7 @@
         <translation>Оношилгоо ба засварын консолыг онгойлго</translation>
     </message>
     <message>
-        <source>Raven</source>
+        <source>Fecal</source>
         <translation>Биткойн</translation>
     </message>
     <message>

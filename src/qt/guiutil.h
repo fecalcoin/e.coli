@@ -31,7 +31,7 @@ class QWidget;
 class QGraphicsDropShadowEffect;
 QT_END_NAMESPACE
 
-/** Utility functions used by the Raven Qt UI.
+/** Utility functions used by the Fecal Qt UI.
  */
 namespace GUIUtil
 {

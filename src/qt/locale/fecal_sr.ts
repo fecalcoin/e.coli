@@ -130,7 +130,7 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Raven address</source>
+        <source>Send coins to a Fecal address</source>
         <translation>Пошаљите новац на fecal адресу</translation>
     </message>
     <message>

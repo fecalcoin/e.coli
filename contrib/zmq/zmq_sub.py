@@ -7,7 +7,7 @@
 """
     ZMQ example using python3's asyncio
 
-    Raven should be started with the command line arguments:
+    Fecal should be started with the command line arguments:
         fecald -testnet -daemon \
                 -zmqpubhashblock=tcp://127.0.0.1:28766 \
                 -zmqpubrawtx=tcp://127.0.0.1:28766 \

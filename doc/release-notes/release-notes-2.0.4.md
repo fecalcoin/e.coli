@@ -20,7 +20,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the 
-installer (on Windows) or just copy over `/Applications/Raven-Qt` (on Mac)
+installer (on Windows) or just copy over `/Applications/Fecal-Qt` (on Mac)
 or `fecald`/`fecal-qt` (on Linux).
 
 The first time you run version 2.0.4 or higher, your chainstate database may
@@ -75,7 +75,7 @@ Credits
 
 Thanks to everyone who directly contributed to this release:
 
-- Most importantly - The Raven Community!
+- Most importantly - The Fecal Community!
 - Tron Black
 - Jesse Empey
 - Jeremy Anderson

@@ -541,13 +541,13 @@ void PrintExceptionContinue(const std::exception *pex, const char *pszThread)
 
 fs::path GetDefaultDataDir()
 {
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Raven
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Raven
-    // Mac: ~/Library/Application Support/Raven
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Fecal
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Fecal
+    // Mac: ~/Library/Application Support/Fecal
     // Unix: ~/.fecal
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Raven";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Fecal";
 #else
     fs::path pathRet;
     char *pszHome = getenv("HOME");
@@ -557,7 +557,7 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Raven";
+    return pathRet / "Library/Application Support/Fecal";
 #else
     // Unix
     return pathRet / ".fecal";

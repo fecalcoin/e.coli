@@ -11,7 +11,7 @@ cli = "fecal-cli"
 
 mode = "-testnet"
 mode = ""
-rpc_port = 18766
+rpc_port = 18883
 #Set this information in your fecal.conf file (in datadir, not testnet3)
 rpc_user = 'rpcuser'
 rpc_pass = 'rpcpass555'

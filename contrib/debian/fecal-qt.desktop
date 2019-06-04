@@ -1,10 +1,10 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Fecal E.coli
-Comment=Connect to the Raven P2P Network
-Comment[de]=Verbinde mit dem Raven peer-to-peer Netzwerk
-Comment[fr]=Raven, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Raven, eşten eşe kriptografik sanal para birimi
+Comment=Connect to the Fecal P2P Network
+Comment[de]=Verbinde mit dem Fecal peer-to-peer Netzwerk
+Comment[fr]=Fecal, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Fecal, eşten eşe kriptografik sanal para birimi
 Exec=fecal-qt %u
 Terminal=false
 Type=Application

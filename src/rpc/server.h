@@ -138,7 +138,7 @@ public:
 };
 
 /**
- * Raven RPC command dispatcher.
+ * Fecal RPC command dispatcher.
  */
 class CRPCTable
 {

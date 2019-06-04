@@ -72,7 +72,7 @@ GLOBAL sph_echo512_context      z_echo;
 #define ZJH (memcpy(&ctx_jh, &z_jh, sizeof(z_jh)))
 #define ZKECCAK (memcpy(&ctx_keccak, &z_keccak, sizeof(z_keccak)))
 #define ZSKEIN (memcpy(&ctx_skein, &z_skein, sizeof(z_skein)))
-/** A hasher class for Raven's 256-bit hash (double SHA-256). */
+/** A hasher class for Fecal's 256-bit hash (double SHA-256). */
 class CHash256 {
 private:
     CSHA256 sha;
@@ -96,7 +96,7 @@ public:
     }
 };
 
-/** A hasher class for Raven's 160-bit hash (SHA-256 + RIPEMD-160). */
+/** A hasher class for Fecal's 160-bit hash (SHA-256 + RIPEMD-160). */
 class CHash160 {
 private:
     CSHA256 sha;

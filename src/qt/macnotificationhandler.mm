@@ -14,7 +14,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.fecalfoundation.Raven-Qt";
+        return @"org.fecalfoundation.Fecal-Qt";
     } else {
         return [self __bundleIdentifier];
     }

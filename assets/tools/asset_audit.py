@@ -12,9 +12,9 @@ import json
 cli = "fecal-cli"
 
 mode = "-testnet"
-rpc_port = 18766
+rpc_port = 18883
 #mode =  "-regtest"
-#rpc_port = 18443
+#rpc_port = 18333
 
 #Set this information in your fecal.conf file (in datadir, not testnet3)
 rpc_user = 'rpcuser'

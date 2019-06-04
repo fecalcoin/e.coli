@@ -57,7 +57,7 @@
 #include "assets/assetdb.h"
 
 #if defined(NDEBUG)
-# error "Raven cannot be compiled without assertions."
+# error "Fecal cannot be compiled without assertions."
 #endif
 
 #define MICRO 0.000001
@@ -108,7 +108,7 @@ static void CheckBlockIndex(const Consensus::Params& consensusParams);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const std::string strMessageMagic = "Raven Signed Message:\n";
+const std::string strMessageMagic = "Fecal Signed Message:\n";
 
 // Internal stuff
 namespace {

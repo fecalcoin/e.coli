@@ -8,8 +8,8 @@ Fecalcoin (SHIT) is a Proof of Work coin built on the Bitcoin UTXO model. As wit
 *  In app CPU mining
 *  Dark Gravity Wave difficulty adjustment (180 block average)
 *  Addresses start with R... for regular addresses, or r... for multisig
-*  Network Port: 8767
-*  RPC Port: 8766
+*  Network Port: 8884
+*  RPC Port: 8883
 
 ### Phase 2 - Assets (Complete)
 

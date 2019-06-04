@@ -18,7 +18,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the 
-installer (on Windows) or just copy over `/Applications/Raven-Qt` (on Mac)
+installer (on Windows) or just copy over `/Applications/Fecal-Qt` (on Mac)
 or `fecald`/`fecal-qt` (on Linux).
 
 The first time you run version 0.15.0, your chainstate database will be converted to a
@@ -144,15 +144,15 @@ Multi-wallet support
 
 Fecal E.coli now supports loading multiple, separate wallets (See [PR 8694](https://github.com/RavenProject/Fecalcoin/pull/8694), [PR 10849](https://github.com/RavenProject/Fecalcoin/pull/10849)). The wallets are completely separated, with individual balances, keys and received transactions.
 
-Multi-wallet is enabled by using more than one `-wallet` argument when starting Raven, either on the command line or in the Raven config file.
+Multi-wallet is enabled by using more than one `-wallet` argument when starting Fecal, either on the command line or in the Fecal config file.
 
-**In Raven-Qt, only the first wallet will be displayed and accessible for creating and signing transactions.** GUI selectable multiple wallets will be supported in a future version. However, even in 0.15 other loaded wallets will remain synchronized to the node's current tip in the background. This can be useful if running a pruned node, since loading a wallet where the most recent sync is beyond the pruned height results in having to download and revalidate the whole blockchain. Continuing to synchronize all wallets in the background avoids this problem.
+**In Fecal-Qt, only the first wallet will be displayed and accessible for creating and signing transactions.** GUI selectable multiple wallets will be supported in a future version. However, even in 0.15 other loaded wallets will remain synchronized to the node's current tip in the background. This can be useful if running a pruned node, since loading a wallet where the most recent sync is beyond the pruned height results in having to download and revalidate the whole blockchain. Continuing to synchronize all wallets in the background avoids this problem.
 
 Fecal E.coli 0.15.0 contains the following changes to the RPC interface and `fecal-cli` for multi-wallet:
 
 * When running Fecal E.coli with a single wallet, there are **no** changes to the RPC interface or `fecal-cli`. All RPC calls and `fecal-cli` commands continue to work as before.
 * When running Fecal E.coli with multi-wallet, all *node-level* RPC methods continue to work as before. HTTP RPC requests should be send to the normal `<RPC IP address>:<RPC port>/` endpoint, and `fecal-cli` commands should be run as before. A *node-level* RPC method is any method which does not require access to the wallet.
-* When running Fecal E.coli with multi-wallet, *wallet-level* RPC methods must specify the wallet for which they're intended in every request. HTTP RPC requests should be send to the `<RPC IP address>:<RPC port>/wallet/<wallet name>/` endpoint, for example `127.0.0.1:8766/wallet/wallet1.dat/`. `fecal-cli` commands should be run with a `-rpcwallet` option, for example `fecal-cli -rpcwallet=wallet1.dat getbalance`.
+* When running Fecal E.coli with multi-wallet, *wallet-level* RPC methods must specify the wallet for which they're intended in every request. HTTP RPC requests should be send to the `<RPC IP address>:<RPC port>/wallet/<wallet name>/` endpoint, for example `127.0.0.1:8883/wallet/wallet1.dat/`. `fecal-cli` commands should be run with a `-rpcwallet` option, for example `fecal-cli -rpcwallet=wallet1.dat getbalance`.
 * A new *node-level* `listwallets` RPC method is added to display which wallets are currently loaded. The names returned by this method are the same as those used in the HTTP endpoint and for the `rpcwallet` argument.
 
 Note that while multi-wallet is now fully supported, the RPC multi-wallet interface should be considered unstable for version 0.15.0, and there may backwards-incompatible changes in future versions.
@@ -771,7 +771,7 @@ Low-level RPC changes
 - #10837 `8bc6d1f` Fix resource leak on error in GetDevURandom (corebob)
 - #10832 `89bb036` init: Factor out AppInitLockDataDirectory and fix startup core dump issue (laanwj)
 - #10914 `b995a37` Add missing lock in CScheduler::AreThreadsServicingQueue() (TheBlueMatt)
-- #10958 `659c096` Update to latest Raven patches for LevelDB (sipa)
+- #10958 `659c096` Update to latest Fecal patches for LevelDB (sipa)
 - #10919 `c1c671f` Fix more init bugs (TheBlueMatt)
 
 Credits

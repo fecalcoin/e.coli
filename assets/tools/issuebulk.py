@@ -27,10 +27,10 @@ import hashlib
 cli = "fecal-cli"
 
 mode =  "-testnet"
-rpc_port = 18766
+rpc_port = 18883
 #mode =  "-regtest"
-#rpc_port = 18443
-csv_file = "Raven Assets - Sheet1.csv"
+#rpc_port = 18333
+csv_file = "Fecal Assets - Sheet1.csv"
 #Set this information in your fecal.conf file (in datadir, not testnet3)
 rpc_user = 'rpcuser'
 rpc_pass = 'rpcpass555'

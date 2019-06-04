@@ -12,7 +12,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between fecal-cli and fecald)
- * of a given instance of the Raven system.
+ * of a given instance of the Fecal system.
  */
 class CBaseChainParams
 {

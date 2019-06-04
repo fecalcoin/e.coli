@@ -5,7 +5,7 @@
 # Copyright (c) 2017 The Fecal E.coli developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Raven P2P network half-a-node.
+"""Fecal P2P network half-a-node.
 
 This python code was modified from ArtForz' public domain  half-a-node, as
 found in the mini-node branch of http://github.com/jgarzik/pynode.
@@ -1763,7 +1763,7 @@ class NodeConn(asyncore.dispatcher):
             vt.addrFrom.port = 0
             self.send_message(vt, True)
 
-        logger.info('Connecting to Raven Node: %s:%d' % (self.dstaddr, self.dstport))
+        logger.info('Connecting to Fecal Node: %s:%d' % (self.dstaddr, self.dstport))
 
         try:
             self.connect((dstaddr, dstport))

@@ -30,7 +30,7 @@ import sys
 
 def main():
     sys.exit(
-        0)  # ~~ This test is to test Raven-TX which currently does not compile, so for now do not run this test, just return success so make check passes.
+        0)  # ~~ This test is to test Fecal-TX which currently does not compile, so for now do not run this test, just return success so make check passes.
     config = configparser.ConfigParser()
     config.optionxform = str
     config.readfp(open(os.path.join(os.path.dirname(__file__), "../config.ini"), encoding="utf8"))

@@ -79,15 +79,15 @@ Fecal E.coli is now available at `./src/fecald`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=fecalrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Raven/fecal.conf"
+    echo -e "rpcuser=fecalrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Fecal/fecal.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Raven/fecal.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Fecal/fecal.conf"
 
 The first time you run fecald, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Raven/debug.log
+    tail -f $HOME/Library/Application\ Support/Fecal/debug.log
 
 Other commands:
 -------

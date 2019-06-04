@@ -41,7 +41,7 @@ class QNetworkRequest;
 QT_END_NAMESPACE
 
 /**
-  Raven GUI main class. This class represents the main window of the Raven UI. It communicates with both the client and
+  Fecal GUI main class. This class represents the main window of the Fecal UI. It communicates with both the client and
   wallet models to give the user an up-to-date view of the current core state.
 */
 class RavenGUI : public QMainWindow

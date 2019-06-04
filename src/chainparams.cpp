@@ -163,7 +163,7 @@ public:
         pchMessageStart[1] = 0x41; // A
         pchMessageStart[2] = 0x56; // V
         pchMessageStart[3] = 0x4e; // N
-        nDefaultPort = 8767;
+        nDefaultPort = 8884;
         nPruneAfterHeight = 100000;
 
         genesis = CreateGenesisBlock(1514999494, 25023712, 0x1e00ffff, 4, 5000 * COIN);
@@ -197,7 +197,7 @@ public:
         };
 
         chainTxData = ChainTxData{
-            // Update as we know more about the contents of the Raven chain
+            // Update as we know more about the contents of the Fecal chain
             // Stats as of 000000000000a72545994ce72b25042ea63707fca169ca4deb7f9dab4f1b1798 window size 43200
             1543817453, // * UNIX timestamp of last known number of transactions
             2033711,    // * total number of transactions between genesis and that timestamp
@@ -369,7 +369,7 @@ public:
         };
 
         chainTxData = ChainTxData{
-            // Update as we know more about the contents of the Raven chain
+            // Update as we know more about the contents of the Fecal chain
             // Stats as of 00000023b66f46d74890287a7b1157dd780c7c5fdda2b561eb96684d2b39d62e window size 43200
             1543633332, // * UNIX timestamp of last known number of transactions
             146666,     // * total number of transactions between genesis and that timestamp
@@ -441,7 +441,7 @@ public:
         pchMessageStart[1] = 0x52; // R
         pchMessageStart[2] = 0x4F; // O
         pchMessageStart[3] = 0x57; // W
-        nDefaultPort = 18444;
+        nDefaultPort = 18334;
         nPruneAfterHeight = 1000;
 
 // This is used inorder to mine the genesis block. Once found, we can use the nonce and block hash found to create a valid genesis block
