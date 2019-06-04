@@ -28,7 +28,7 @@ regularly to indicate new official, stable release versions of Fecal E.coli.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Developer IRC can be found on Freenode at #fecal-core-dev.
+Developer IRC can be found on Freenode at #fecalcoin.
 
 Testing
 -------
