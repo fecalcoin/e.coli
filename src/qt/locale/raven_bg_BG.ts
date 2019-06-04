@@ -418,9 +418,9 @@
     </message>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>fecal-core</name>
     <message>
-        <source>Raven Core</source>
+        <source>Fecal E.coli</source>
         <translation>Биткойн ядро</translation>
     </message>
     </context>

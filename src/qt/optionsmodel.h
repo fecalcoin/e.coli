@@ -1,10 +1,10 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_QT_OPTIONSMODEL_H
-#define RAVEN_QT_OPTIONSMODEL_H
+#ifndef FECAL_QT_OPTIONSMODEL_H
+#define FECAL_QT_OPTIONSMODEL_H
 
 #include "amount.h"
 
@@ -86,10 +86,10 @@ private:
     int nDisplayUnit;
     QString strThirdPartyTxUrls;
     bool fCoinControlFeatures;
-    /** RVN START*/
+    /** SHIT START*/
     bool fCustomFeeFeatures;
     bool fDarkModeEnabled;
-    /** RVN END*/
+    /** SHIT END*/
     /* settings that were overridden by command-line */
     QString strOverriddenByCommandLine;
 
@@ -105,4 +105,4 @@ Q_SIGNALS:
     void hideTrayIconChanged(bool);
 };
 
-#endif // RAVEN_QT_OPTIONSMODEL_H
+#endif // FECAL_QT_OPTIONSMODEL_H

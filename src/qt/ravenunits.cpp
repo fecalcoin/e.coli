@@ -1,9 +1,9 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "ravenunits.h"
+#include "fecalunits.h"
 
 #include "primitives/transaction.h"
 
@@ -18,9 +18,9 @@ RavenUnits::RavenUnits(QObject *parent):
 QList<RavenUnits::Unit> RavenUnits::availableUnits()
 {
     QList<RavenUnits::Unit> unitlist;
-    unitlist.append(RVN);
-    unitlist.append(mRVN);
-    unitlist.append(uRVN);
+    unitlist.append(SHIT);
+    unitlist.append(mSHIT);
+    unitlist.append(uSHIT);
     return unitlist;
 }
 
@@ -28,9 +28,9 @@ bool RavenUnits::valid(int unit)
 {
     switch(unit)
     {
-    case RVN:
-    case mRVN:
-    case uRVN:
+    case SHIT:
+    case mSHIT:
+    case uSHIT:
         return true;
     default:
         return false;
@@ -41,9 +41,9 @@ QString RavenUnits::name(int unit)
 {
     switch(unit)
     {
-    case RVN: return QString("RVN");
-    case mRVN: return QString("mRVN");
-    case uRVN: return QString::fromUtf8("μRVN");
+    case SHIT: return QString("SHIT");
+    case mSHIT: return QString("mSHIT");
+    case uSHIT: return QString::fromUtf8("μSHIT");
     default: return QString("???");
     }
 }
@@ -52,9 +52,9 @@ QString RavenUnits::description(int unit)
 {
     switch(unit)
     {
-    case RVN: return QString("Ravens");
-    case mRVN: return QString("Milli-Ravens (1 / 1" THIN_SP_UTF8 "000)");
-    case uRVN: return QString("Micro-Ravens (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case SHIT: return QString("Ravens");
+    case mSHIT: return QString("Milli-Ravens (1 / 1" THIN_SP_UTF8 "000)");
+    case uSHIT: return QString("Micro-Ravens (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }
@@ -63,9 +63,9 @@ qint64 RavenUnits::factor(int unit)
 {
     switch(unit)
     {
-    case RVN:  return 100000000;
-    case mRVN: return 100000;
-    case uRVN: return 100;
+    case SHIT:  return 100000000;
+    case mSHIT: return 100000;
+    case uSHIT: return 100;
     default:   return 100000000;
     }
 }
@@ -91,9 +91,9 @@ int RavenUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case RVN: return 8;
-    case mRVN: return 5;
-    case uRVN: return 2;
+    case SHIT: return 8;
+    case mSHIT: return 5;
+    case uSHIT: return 2;
     default: return 0;
     }
 }
@@ -150,7 +150,7 @@ QString RavenUnits::formatWithUnit(int unit, const CAmount& amount, bool plussig
 
 QString RavenUnits::formatWithCustomName(QString customName, const CAmount& amount, int unit, bool plussign, SeparatorStyle separators)
 {
-    return format(RVN, amount / factorAsset(MAX_ASSET_UNITS - unit), plussign, separators, unit) + QString(" ") + customName;
+    return format(SHIT, amount / factorAsset(MAX_ASSET_UNITS - unit), plussign, separators, unit) + QString(" ") + customName;
 }
 
 QString RavenUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)

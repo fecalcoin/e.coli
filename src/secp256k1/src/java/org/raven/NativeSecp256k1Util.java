@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.raven;
+package org.fecal;
 
 public class NativeSecp256k1Util{
 

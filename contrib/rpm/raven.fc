@@ -1,8 +1,8 @@
-/usr/bin/raven-cli		--	gen_context(system_u:object_r:raven_exec_t,s0)
-/usr/sbin/ravend		--	gen_context(system_u:object_r:raven_exec_t,s0)
-/usr/lib(64)?/raven/ravend		--	gen_context(system_u:object_r:raven_exec_t,s0)
+/usr/bin/fecal-cli		--	gen_context(system_u:object_r:fecal_exec_t,s0)
+/usr/sbin/fecald		--	gen_context(system_u:object_r:fecal_exec_t,s0)
+/usr/lib(64)?/fecal/fecald		--	gen_context(system_u:object_r:fecal_exec_t,s0)
 
-/etc/raven(/.*)?		gen_context(system_u:object_r:raven_conf_t,s0)
-/var/lib/raven(/.*)?		gen_context(system_u:object_r:raven_var_lib_t,s0)
+/etc/fecal(/.*)?		gen_context(system_u:object_r:fecal_conf_t,s0)
+/var/lib/fecal(/.*)?		gen_context(system_u:object_r:fecal_var_lib_t,s0)
 
-(/var)?/run/ravend(/.*)?   gen_context(system_u:object_r:raven_var_run_t,s0)
+(/var)?/run/fecald(/.*)?   gen_context(system_u:object_r:fecal_var_run_t,s0)

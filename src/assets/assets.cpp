@@ -1,4 +1,4 @@
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -57,7 +57,7 @@ static const std::regex CHANNEL_INDICATOR(R"(^[^^~#!]+~[^~#!\/]+$)");
 static const std::regex OWNER_INDICATOR(R"(^[^^~#!]+!$)");
 static const std::regex VOTE_INDICATOR(R"(^[^^~#!]+\^[^~#!\/]+$)");
 
-static const std::regex RAVEN_NAMES("^RVN$|^RAVEN$|^RAVENCOIN$");
+static const std::regex FECAL_NAMES("^SHIT$|^FECAL$|^Fecalcoin$");
 
 bool IsRootNameValid(const std::string& name)
 {
@@ -65,7 +65,7 @@ bool IsRootNameValid(const std::string& name)
         && !std::regex_match(name, DOUBLE_PUNCTUATION)
         && !std::regex_match(name, LEADING_PUNCTUATION)
         && !std::regex_match(name, TRAILING_PUNCTUATION)
-        && !std::regex_match(name, RAVEN_NAMES);
+        && !std::regex_match(name, FECAL_NAMES);
 }
 
 bool IsSubNameValid(const std::string& name)
@@ -438,13 +438,13 @@ void CNewAsset::ConstructTransaction(CScript& script) const
     ssAsset << *this;
 
     std::vector<unsigned char> vchMessage;
-    vchMessage.push_back(RVN_R); // r
-    vchMessage.push_back(RVN_V); // v
-    vchMessage.push_back(RVN_N); // n
-    vchMessage.push_back(RVN_Q); // q
+    vchMessage.push_back(SHIT_R); // r
+    vchMessage.push_back(SHIT_V); // v
+    vchMessage.push_back(SHIT_N); // n
+    vchMessage.push_back(SHIT_Q); // q
 
     vchMessage.insert(vchMessage.end(), ssAsset.begin(), ssAsset.end());
-    script << OP_RVN_ASSET << ToByteVector(vchMessage) << OP_DROP;
+    script << OP_SHIT_ASSET << ToByteVector(vchMessage) << OP_DROP;
 }
 
 void CNewAsset::ConstructOwnerTransaction(CScript& script) const
@@ -453,13 +453,13 @@ void CNewAsset::ConstructOwnerTransaction(CScript& script) const
     ssOwner << std::string(this->strName + OWNER_TAG);
 
     std::vector<unsigned char> vchMessage;
-    vchMessage.push_back(RVN_R); // r
-    vchMessage.push_back(RVN_V); // v
-    vchMessage.push_back(RVN_N); // n
-    vchMessage.push_back(RVN_O); // o
+    vchMessage.push_back(SHIT_R); // r
+    vchMessage.push_back(SHIT_V); // v
+    vchMessage.push_back(SHIT_N); // n
+    vchMessage.push_back(SHIT_O); // o
 
     vchMessage.insert(vchMessage.end(), ssOwner.begin(), ssOwner.end());
-    script << OP_RVN_ASSET << ToByteVector(vchMessage) << OP_DROP;
+    script << OP_SHIT_ASSET << ToByteVector(vchMessage) << OP_DROP;
 }
 
 bool AssetFromTransaction(const CTransaction& tx, CNewAsset& asset, std::string& strAddress)
@@ -746,7 +746,7 @@ bool CTransaction::IsNewUniqueAsset() const
 //! Call this function after IsNewUniqueAsset
 bool CTransaction::VerifyNewUniqueAsset(std::string& strError) const
 {
-    // Must contain at least 3 outpoints (RVN burn, owner change and one or more new unique assets that share a root (should be in trailing position))
+    // Must contain at least 3 outpoints (SHIT burn, owner change and one or more new unique assets that share a root (should be in trailing position))
     if (vout.size() < 3) {
         strError  = "bad-txns-unique-vout-size-to-small";
         return false;
@@ -939,13 +939,13 @@ void CAssetTransfer::ConstructTransaction(CScript& script) const
     ssTransfer << *this;
 
     std::vector<unsigned char> vchMessage;
-    vchMessage.push_back(RVN_R); // r
-    vchMessage.push_back(RVN_V); // v
-    vchMessage.push_back(RVN_N); // n
-    vchMessage.push_back(RVN_T); // t
+    vchMessage.push_back(SHIT_R); // r
+    vchMessage.push_back(SHIT_V); // v
+    vchMessage.push_back(SHIT_N); // n
+    vchMessage.push_back(SHIT_T); // t
 
     vchMessage.insert(vchMessage.end(), ssTransfer.begin(), ssTransfer.end());
-    script << OP_RVN_ASSET << ToByteVector(vchMessage) << OP_DROP;
+    script << OP_SHIT_ASSET << ToByteVector(vchMessage) << OP_DROP;
 }
 
 CReissueAsset::CReissueAsset(const std::string &strAssetName, const CAmount &nAmount, const int &nUnits, const int &nReissuable,
@@ -1021,13 +1021,13 @@ void CReissueAsset::ConstructTransaction(CScript& script) const
     ssReissue << *this;
 
     std::vector<unsigned char> vchMessage;
-    vchMessage.push_back(RVN_R); // r
-    vchMessage.push_back(RVN_V); // v
-    vchMessage.push_back(RVN_N); // n
-    vchMessage.push_back(RVN_R); // r
+    vchMessage.push_back(SHIT_R); // r
+    vchMessage.push_back(SHIT_V); // v
+    vchMessage.push_back(SHIT_N); // n
+    vchMessage.push_back(SHIT_R); // r
 
     vchMessage.insert(vchMessage.end(), ssReissue.begin(), ssReissue.end());
-    script << OP_RVN_ASSET << ToByteVector(vchMessage) << OP_DROP;
+    script << OP_SHIT_ASSET << ToByteVector(vchMessage) << OP_DROP;
 }
 
 bool CReissueAsset::IsNull() const
@@ -1992,7 +1992,7 @@ bool CheckIssueBurnTx(const CTxOut& txOut, const AssetType& type)
 
 bool CheckReissueBurnTx(const CTxOut& txOut)
 {
-    // Check the first transaction and verify that the correct RVN Amount
+    // Check the first transaction and verify that the correct SHIT Amount
     if (txOut.nValue != GetReissueAssetBurnAmount())
         return false;
 
@@ -2597,7 +2597,7 @@ bool CreateAssetTransaction(CWallet* pwallet, CCoinControl& coinControl, const s
 
     CAmount curBalance = pwallet->GetBalance();
 
-    // Check to make sure the wallet has the RVN required by the burnAmount
+    // Check to make sure the wallet has the SHIT required by the burnAmount
     if (curBalance < burnAmount) {
         error = std::make_pair(RPC_WALLET_INSUFFICIENT_FUNDS, "Insufficient funds");
         return false;
@@ -2720,7 +2720,7 @@ bool CreateReissueAssetTransaction(CWallet* pwallet, CCoinControl& coinControl, 
     // Get the current burn amount for issuing an asset
     CAmount burnAmount = GetReissueAssetBurnAmount();
 
-    // Check to make sure the wallet has the RVN required by the burnAmount
+    // Check to make sure the wallet has the SHIT required by the burnAmount
     if (curBalance < burnAmount) {
         error = std::make_pair(RPC_WALLET_INSUFFICIENT_FUNDS, "Insufficient funds");
         return false;
@@ -2769,7 +2769,7 @@ bool CreateTransferAssetTransaction(CWallet* pwallet, const CCoinControl& coinCo
     // Check for a balance before processing transfers
     CAmount curBalance = pwallet->GetBalance();
     if (curBalance == 0) {
-        error = std::make_pair(RPC_WALLET_INSUFFICIENT_FUNDS, std::string("This wallet doesn't contain any RVN, transfering an asset requires a network fee"));
+        error = std::make_pair(RPC_WALLET_INSUFFICIENT_FUNDS, std::string("This wallet doesn't contain any SHIT, transfering an asset requires a network fee"));
         return false;
     }
 

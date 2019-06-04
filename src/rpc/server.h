@@ -1,11 +1,11 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_RPCSERVER_H
-#define RAVEN_RPCSERVER_H
+#ifndef FECAL_RPCSERVER_H
+#define FECAL_RPCSERVER_H
 
 #include "amount.h"
 #include "rpc/protocol.h"
@@ -197,4 +197,4 @@ std::string JSONRPCExecBatch(const JSONRPCRequest& jreq, const UniValue& vReq);
 // Retrieves any serialization flags requested in command line argument
 int RPCSerializationFlags();
 
-#endif // RAVEN_RPCSERVER_H
+#endif // FECAL_RPCSERVER_H

@@ -131,7 +131,7 @@
     </message>
     <message>
         <source>Send coins to a Raven address</source>
-        <translation>Пошаљите новац на raven адресу</translation>
+        <translation>Пошаљите новац на fecal адресу</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -442,7 +442,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>fecal-core</name>
     <message>
         <source>Options:</source>
         <translation>Opcije</translation>

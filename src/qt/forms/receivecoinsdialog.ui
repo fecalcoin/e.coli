@@ -158,7 +158,7 @@
                <string>&amp;Request payment</string>
               </property>
               <property name="icon">
-               <iconset resource="../raven.qrc">
+               <iconset resource="../fecal.qrc">
                 <normaloff>:/icons/receiving_addresses</normaloff>:/icons/receiving_addresses</iconset>
               </property>
              </widget>
@@ -178,7 +178,7 @@
                <string>Clear</string>
               </property>
               <property name="icon">
-               <iconset resource="../raven.qrc">
+               <iconset resource="../fecal.qrc">
                 <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
               </property>
               <property name="autoDefault">
@@ -268,7 +268,7 @@
              <string>Show</string>
             </property>
             <property name="icon">
-             <iconset resource="../raven.qrc">
+             <iconset resource="../fecal.qrc">
               <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
             </property>
             <property name="autoDefault">
@@ -288,7 +288,7 @@
              <string>Remove</string>
             </property>
             <property name="icon">
-             <iconset resource="../raven.qrc">
+             <iconset resource="../fecal.qrc">
               <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
             </property>
             <property name="autoDefault">
@@ -322,7 +322,7 @@
   <customwidget>
    <class>RavenAmountField</class>
    <extends>QLineEdit</extends>
-   <header>ravenamountfield.h</header>
+   <header>fecalamountfield.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
@@ -338,7 +338,7 @@
   <tabstop>removeRequestButton</tabstop>
  </tabstops>
  <resources>
-  <include location="../raven.qrc"/>
+  <include location="../fecal.qrc"/>
  </resources>
  <connections/>
 </ui>

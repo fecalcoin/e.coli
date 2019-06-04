@@ -1,10 +1,10 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_QT_GUIUTIL_H
-#define RAVEN_QT_GUIUTIL_H
+#ifndef FECAL_QT_GUIUTIL_H
+#define FECAL_QT_GUIUTIL_H
 
 #include "amount.h"
 #include "fs.h"
@@ -57,7 +57,7 @@ namespace GUIUtil
     void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent);
     void setupAmountWidget(QLineEdit *widget, QWidget *parent);
 
-    // Parse "raven:" URI into recipient object, return true on successful parsing
+    // Parse "fecal:" URI into recipient object, return true on successful parsing
     bool parseRavenURI(const QUrl &uri, SendCoinsRecipient *out);
     bool parseRavenURI(QString uri, SendCoinsRecipient *out);
     QString formatRavenURI(const SendCoinsRecipient &info);
@@ -260,4 +260,4 @@ namespace GUIUtil
 
 } // namespace GUIUtil
 
-#endif // RAVEN_QT_GUIUTIL_H
+#endif // FECAL_QT_GUIUTIL_H

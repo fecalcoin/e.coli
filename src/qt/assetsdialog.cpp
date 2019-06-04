@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,7 +8,7 @@
 #include "ui_assetsdialog.h"
 
 #include "addresstablemodel.h"
-#include "ravenunits.h"
+#include "fecalunits.h"
 #include "clientmodel.h"
 #include "assetcontroldialog.h"
 #include "guiutil.h"
@@ -118,11 +118,11 @@ AssetsDialog::AssetsDialog(const PlatformStyle *_platformStyle, QWidget *parent)
     ui->checkBoxMinimumFee->setChecked(settings.value("fPayOnlyMinFee").toBool());
     minimizeFeeSection(settings.value("fFeeSectionMinimized").toBool());
 
-    /** RVN START */
+    /** SHIT START */
     setupAssetControlFrame(platformStyle);
     setupScrollView(platformStyle);
     setupFeeControl(platformStyle);
-    /** RVN END */
+    /** SHIT END */
 }
 
 void AssetsDialog::setClientModel(ClientModel *_clientModel)
@@ -982,7 +982,7 @@ void AssetsDialog::assetControlUpdateLabels()
     }
 }
 
-/** RVN START */
+/** SHIT START */
 void AssetsDialog::assetControlUpdateSendCoinsDialog()
 {
     for(int i = 0; i < ui->entries->count(); ++i)
@@ -1047,4 +1047,4 @@ void AssetsDialog::handleFirstSelection()
         entry->refreshAssetList();
     }
 }
-/** RVN END */
+/** SHIT END */

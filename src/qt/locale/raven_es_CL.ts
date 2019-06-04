@@ -143,7 +143,7 @@
     </message>
     <message>
         <source>Send coins to a Raven address</source>
-        <translation>Enviar monedas a una dirección raven</translation>
+        <translation>Enviar monedas a una dirección fecal</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -206,8 +206,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and raven: URIs)</source>
-        <translation>Pide pagos (genera codigos QR and raven: URls)</translation>
+        <source>Request payments (generates QR codes and fecal: URIs)</source>
+        <translation>Pide pagos (genera codigos QR and fecal: URls)</translation>
     </message>
     <message>
         <source>Error</source>
@@ -750,7 +750,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>fecal-core</name>
     <message>
         <source>Options:</source>
         <translation>Opciones:
@@ -772,8 +772,8 @@
 </translation>
     </message>
     <message>
-        <source>Raven Core</source>
-        <translation>raven core</translation>
+        <source>Fecal E.coli</source>
+        <translation>Fecal E.coli</translation>
     </message>
     <message>
         <source>Error loading block database</source>

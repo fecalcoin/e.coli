@@ -1,12 +1,12 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "receiverequestdialog.h"
 #include "ui_receiverequestdialog.h"
 
-#include "ravenunits.h"
+#include "fecalunits.h"
 #include "guiconstants.h"
 #include "guiutil.h"
 #include "optionsmodel.h"
@@ -23,7 +23,7 @@
 #endif
 
 #if defined(HAVE_CONFIG_H)
-#include "config/raven-config.h" /* for USE_QRCODE */
+#include "config/fecal-config.h" /* for USE_QRCODE */
 #endif
 
 #ifdef USE_QRCODE

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2017 The Bitcoin Core developers
-# Copyright (c) 2017-2018 The Raven Core developers
+# Copyright (c) 2017-2018 The Fecal E.coli developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test message sending before handshake completion.
@@ -11,7 +11,7 @@ received a VERACK.
 This test connects to a node and sends it a few messages, trying to intice it
 into sending us something it shouldn't.
 
-Also test that nodes that send unsupported service bits to ravend are disconnected
+Also test that nodes that send unsupported service bits to fecald are disconnected
 and don't receive a VERACK. Unsupported service bits are currently 1 << 5 and
 1 << 7 (until August 1st 2018).
 
@@ -65,7 +65,7 @@ class CLazyNode(NodeConnCB):
 # anyway, and eventually get disconnected.
 class CNodeNoVersionBan(CLazyNode):
     # send a bunch of veracks without sending a message. This should get us disconnected.
-    # NOTE: implementation-specific check here. Remove if ravend ban behavior changes
+    # NOTE: implementation-specific check here. Remove if fecald ban behavior changes
     def on_open(self, conn):
         super().on_open(conn)
         for i in range(banscore):

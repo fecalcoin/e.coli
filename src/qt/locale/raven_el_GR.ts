@@ -223,7 +223,7 @@
     </message>
     <message>
         <source>Send coins to a Raven address</source>
-        <translation>Στείλε νομίσματα σε μια διεύθυνση raven</translation>
+        <translation>Στείλε νομίσματα σε μια διεύθυνση fecal</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -298,8 +298,8 @@
         <translation>Εργαλειοθήκη καρτελών</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and raven: URIs)</source>
-        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις raven: )</translation>
+        <source>Request payments (generates QR codes and fecal: URIs)</source>
+        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις fecal: )</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -310,8 +310,8 @@
         <translation>Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων και ετικετών λήψεως</translation>
     </message>
     <message>
-        <source>Open a raven: URI or payment request</source>
-        <translation>Άνοιγμα raven: URI αίτησης πληρωμής</translation>
+        <source>Open a fecal: URI or payment request</source>
+        <translation>Άνοιγμα fecal: URI αίτησης πληρωμής</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1673,7 +1673,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>fecal-core</name>
     <message>
         <source>Options:</source>
         <translation>Επιλογές:</translation>
@@ -1699,8 +1699,8 @@
         <translation>Εκτέλεση στο παρασκήνιο κι αποδοχή εντολών</translation>
     </message>
     <message>
-        <source>Raven Core</source>
-        <translation>Raven Core</translation>
+        <source>Fecal E.coli</source>
+        <translation>Fecal E.coli</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

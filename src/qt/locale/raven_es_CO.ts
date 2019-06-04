@@ -294,10 +294,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>fecal-core</name>
     <message>
-        <source>Raven Core</source>
-        <translation>Raven Core</translation>
+        <source>Fecal E.coli</source>
+        <translation>Fecal E.coli</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

@@ -1,6 +1,6 @@
 [Protocol]
-exec=raven-qt '%u'
-protocol=raven
+exec=fecal-qt '%u'
+protocol=fecal
 input=none
 output=none
 helper=true

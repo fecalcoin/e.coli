@@ -1,4 +1,4 @@
-Source: raven
+Source: fecal
 Section: utils
 Priority: optional
 Maintainer: Matt Corallo <matt@mattcorallo.com>
@@ -26,11 +26,11 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: https://ravencoin.org/
-Vcs-Git: git://github.com/RavenProject/Ravencoin.git
-Vcs-Browser: https://github.com/RavenProject/Ravencoin
+Homepage: https://fecalcoin.org/
+Vcs-Git: git://github.com/RavenProject/Fecalcoin.git
+Vcs-Browser: https://github.com/RavenProject/Fecalcoin
 
-Package: ravend
+Package: fecald
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -40,10 +40,10 @@ Description: peer-to-peer network based digital currency - daemon
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides the daemon, ravend, and the CLI tool
- raven-cli to interact with the daemon.
+ This package provides the daemon, fecald, and the CLI tool
+ fecal-cli to interact with the daemon.
 
-Package: raven-qt
+Package: fecal-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
@@ -55,7 +55,7 @@ Description: peer-to-peer network based digital currency - Qt GUI
  .
  This package provides Raven-Qt, a GUI for Raven based on Qt.
 
-Package: raven-tx
+Package: fecal-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
@@ -65,6 +65,6 @@ Description: peer-to-peer digital currency - standalone transaction tool
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides raven-tx, a command-line transaction creation
- tool which can be used without a raven daemon.  Some means of
+ This package provides fecal-tx, a command-line transaction creation
+ tool which can be used without a fecal daemon.  Some means of
  exchanging minimal transaction data with peers is still required.

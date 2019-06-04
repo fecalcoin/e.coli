@@ -1,11 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_POLICY_FEERATE_H
-#define RAVEN_POLICY_FEERATE_H
+#ifndef FECAL_POLICY_FEERATE_H
+#define FECAL_POLICY_FEERATE_H
 
 #include "amount.h"
 #include "serialize.h"
@@ -57,4 +57,4 @@ public:
     }
 };
 
-#endif //  RAVEN_POLICY_FEERATE_H
+#endif //  FECAL_POLICY_FEERATE_H

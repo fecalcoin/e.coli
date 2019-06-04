@@ -1,7 +1,7 @@
 Expectations for DNS Seed operators
 ====================================
 
-Raven Core attempts to minimize the level of trust in DNS seeds,
+Fecal E.coli attempts to minimize the level of trust in DNS seeds,
 but DNS seeds still pose a small amount of risk for the network.
 As such, DNS seeds must be run by entities which have some minimum
 level of trust within the Raven community.
@@ -44,11 +44,11 @@ related to the DNS seed operation.
 If these expectations cannot be satisfied the operator should
 discontinue providing services and contact the active Raven
 Core development team as well as posting on
-[raven-dev](https://lists.linuxfoundation.org/mailman/listinfo/raven-dev).
+[fecal-dev](https://lists.linuxfoundation.org/mailman/listinfo/fecal-dev).
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.
 
 See also
 ----------
-- [raven-seeder](https://github.com/sipa/raven-seeder) is a reference implementation of a DNS seed.
+- [fecal-seeder](https://github.com/sipa/fecal-seeder) is a reference implementation of a DNS seed.

@@ -168,8 +168,8 @@
         <translation>Bevestig dat die beursie gekodifiseer is</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR RAVENS&lt;/b&gt;!</source>
-        <translation>Waarskuwing: Indien u die beursie kodifiseer en u vergeet u wagwoord &lt;b&gt;VERLOOR U AL U RAVENS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FECALS&lt;/b&gt;!</source>
+        <translation>Waarskuwing: Indien u die beursie kodifiseer en u vergeet u wagwoord &lt;b&gt;VERLOOR U AL U FECALS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -398,8 +398,8 @@
         <translation>Orebalk</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and raven: URIs)</source>
-        <translation>Versoek betalings (genereer QR-kodes en raven: URI's)</translation>
+        <source>Request payments (generates QR codes and fecal: URIs)</source>
+        <translation>Versoek betalings (genereer QR-kodes en fecal: URI's)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -410,8 +410,8 @@
         <translation>Vertoon die lys van gebruikte ontvangers-adresse en etikette</translation>
     </message>
     <message>
-        <source>Open a raven: URI or payment request</source>
-        <translation>Skep 'n raven: URI of betalingsversoek</translation>
+        <source>Open a fecal: URI or payment request</source>
+        <translation>Skep 'n fecal: URI of betalingsversoek</translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -1010,9 +1010,9 @@
     </message>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>fecal-core</name>
     <message>
-        <source>Raven Core</source>
+        <source>Fecal E.coli</source>
         <translation>Raven Kern</translation>
     </message>
     <message>

@@ -1,11 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_HASH_H
-#define RAVEN_HASH_H
+#ifndef FECAL_HASH_H
+#define FECAL_HASH_H
 #include <iostream>
 #include <chrono>
 #include "crypto/ripemd160.h"
@@ -486,4 +486,4 @@ inline uint256 HashX16R(const T1 pbegin, const T1 pend, const uint256 PrevBlockH
 }
 
 
-#endif // RAVEN_HASH_H
+#endif // FECAL_HASH_H

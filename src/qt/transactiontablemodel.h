@@ -1,12 +1,12 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_QT_TRANSACTIONTABLEMODEL_H
-#define RAVEN_QT_TRANSACTIONTABLEMODEL_H
+#ifndef FECAL_QT_TRANSACTIONTABLEMODEL_H
+#define FECAL_QT_TRANSACTIONTABLEMODEL_H
 
-#include "ravenunits.h"
+#include "fecalunits.h"
 
 #include <QAbstractTableModel>
 #include <QStringList>
@@ -74,7 +74,7 @@ public:
         StatusRole,
         /** Unprocessed icon */
         RawDecorationRole,
-        /** RVN or name of an asset */
+        /** SHIT or name of an asset */
         AssetNameRole,
     };
 
@@ -121,4 +121,4 @@ public Q_SLOTS:
     friend class TransactionTablePriv;
 };
 
-#endif // RAVEN_QT_TRANSACTIONTABLEMODEL_H
+#endif // FECAL_QT_TRANSACTIONTABLEMODEL_H

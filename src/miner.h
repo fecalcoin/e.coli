@@ -1,11 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_MINER_H
-#define RAVEN_MINER_H
+#ifndef FECAL_MINER_H
+#define FECAL_MINER_H
 
 #include "primitives/block.h"
 #include "txmempool.h"
@@ -207,4 +207,4 @@ void IncrementExtraNonce(CBlock* pblock, const CBlockIndex* pindexPrev, unsigned
 int64_t UpdateTime(CBlockHeader* pblock, const Consensus::Params& consensusParams, const CBlockIndex* pindexPrev);
 
 int GenerateRavens(bool fGenerate, int nThreads, const CChainParams& chainparams);
-#endif // RAVEN_MINER_H
+#endif // FECAL_MINER_H

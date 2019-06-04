@@ -1,10 +1,10 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_QT_WALLETVIEW_H
-#define RAVEN_QT_WALLETVIEW_H
+#ifndef FECAL_QT_WALLETVIEW_H
+#define FECAL_QT_WALLETVIEW_H
 
 #include "amount.h"
 
@@ -49,7 +49,7 @@ public:
     */
     void setClientModel(ClientModel *clientModel);
     /** Set the wallet model.
-        The wallet model represents a raven wallet, and offers access to the list of transactions, address book and sending
+        The wallet model represents a fecal wallet, and offers access to the list of transactions, address book and sending
         functionality.
     */
     void setWalletModel(WalletModel *walletModel);
@@ -75,11 +75,11 @@ private:
     const PlatformStyle *platformStyle;
 
 
-    /** RVN START */
+    /** SHIT START */
     AssetsDialog *assetsPage;
     CreateAssetDialog *createAssetsPage;
     ReissueAssetDialog *manageAssetsPage;
-    /** RVN END */
+    /** SHIT END */
 
 public Q_SLOTS:
     /** Switch to overview (home) page */
@@ -125,12 +125,12 @@ public Q_SLOTS:
     void requestedSyncWarningInfo();
 
 
-    /** RVN START */
+    /** SHIT START */
     /** Switch to assets page */
     void gotoAssetsPage();
     void gotoCreateAssetsPage();
     void gotoManageAssetsPage();
-    /** RVN END */
+    /** SHIT END */
 
 Q_SIGNALS:
     /** Signal that we want to show the main window */
@@ -149,4 +149,4 @@ Q_SIGNALS:
     void checkAssets();
 };
 
-#endif // RAVEN_QT_WALLETVIEW_H
+#endif // FECAL_QT_WALLETVIEW_H

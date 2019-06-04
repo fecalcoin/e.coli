@@ -374,7 +374,7 @@
         <translation>نوارابزار برگه‌ها</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and raven: URIs)</source>
+        <source>Request payments (generates QR codes and fecal: URIs)</source>
         <translation>درخواست پرداخت ( تولید کد کیوار و ادرس بیت کوین)</translation>
     </message>
     <message>
@@ -386,7 +386,7 @@
         <translation>نمایش لیست آدرس های دریافت و لیبل ها</translation>
     </message>
     <message>
-        <source>Open a raven: URI or payment request</source>
+        <source>Open a fecal: URI or payment request</source>
         <translation>بازکردن یک بیت کوین: آدرس یا درخواست پرداخت</translation>
     </message>
     <message>
@@ -1676,7 +1676,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>fecal-core</name>
     <message>
         <source>Options:</source>
         <translation>گزینه‌ها:</translation>
@@ -1702,7 +1702,7 @@
         <translation>اجرا در پشت زمینه به‌صورت یک سرویس و پذیرش دستورات</translation>
     </message>
     <message>
-        <source>Raven Core</source>
+        <source>Fecal E.coli</source>
         <translation> هسته Raven </translation>
     </message>
     <message>

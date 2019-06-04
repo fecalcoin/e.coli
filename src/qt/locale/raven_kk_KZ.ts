@@ -298,7 +298,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>fecal-core</name>
     <message>
         <source>Information</source>
         <translation>Информация</translation>

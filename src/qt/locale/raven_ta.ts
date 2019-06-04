@@ -706,9 +706,9 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>fecal-core</name>
     <message>
-        <source>Raven Core</source>
+        <source>Fecal E.coli</source>
         <translation>Raven மையம்</translation>
     </message>
     <message>

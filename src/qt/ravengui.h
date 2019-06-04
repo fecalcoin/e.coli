@@ -1,13 +1,13 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_QT_RAVENGUI_H
-#define RAVEN_QT_RAVENGUI_H
+#ifndef FECAL_QT_FECALGUI_H
+#define FECAL_QT_FECALGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/raven-config.h"
+#include "config/fecal-config.h"
 #endif
 
 #include "amount.h"
@@ -62,7 +62,7 @@ public:
 
 #ifdef ENABLE_WALLET
     /** Set the wallet model.
-        The wallet model represents a raven wallet, and offers access to the list of transactions, address book and sending
+        The wallet model represents a fecal wallet, and offers access to the list of transactions, address book and sending
         functionality.
     */
     bool addWallet(const QString& name, WalletModel *walletModel);
@@ -115,7 +115,7 @@ private:
     QAction *openAction;
     QAction *showHelpMessageAction;
 
-    /** RVN START */
+    /** SHIT START */
     QAction *transferAssetAction;
     QAction *createAssetAction;
     QAction *manageAssetAction;
@@ -127,7 +127,7 @@ private:
     QTimer *pricingTimer;
     QNetworkAccessManager* networkManager;
     QNetworkRequest* request;
-    /** RVN END */
+    /** SHIT END */
 
     QSystemTrayIcon *trayIcon;
     QMenu *trayIconMenu;
@@ -232,12 +232,12 @@ private Q_SLOTS:
     /** Show open dialog */
     void openClicked();
 
-    /** RVN START */
+    /** SHIT START */
     /** Switch to assets page */
     void gotoAssetsPage();
     void gotoCreateAssetsPage();
     void gotoManageAssetsPage();
-    /** RVN END */
+    /** SHIT END */
 
 #endif // ENABLE_WALLET
     /** Show configuration dialog */
@@ -304,4 +304,4 @@ private Q_SLOTS:
     void onMenuSelection(QAction* action);
 };
 
-#endif // RAVEN_QT_RAVENGUI_H
+#endif // FECAL_QT_FECALGUI_H

@@ -1,11 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_SCRIPT_STANDARD_H
-#define RAVEN_SCRIPT_STANDARD_H
+#ifndef FECAL_SCRIPT_STANDARD_H
+#define FECAL_SCRIPT_STANDARD_H
 
 #include "script/interpreter.h"
 #include "uint256.h"
@@ -65,11 +65,11 @@ enum txnouttype
     TX_NULL_DATA = 5, //!< unspendable OP_RETURN script that carries data
     TX_WITNESS_V0_SCRIPTHASH = 6,
     TX_WITNESS_V0_KEYHASH = 7,
-    /** RVN START */
+    /** SHIT START */
     TX_NEW_ASSET = 8,
     TX_REISSUE_ASSET = 9,
     TX_TRANSFER_ASSET = 10
-    /** RVN END */
+    /** SHIT END */
 };
 
 class CNoDestination {
@@ -83,7 +83,7 @@ public:
  *  * CNoDestination: no destination set
  *  * CKeyID: TX_PUBKEYHASH destination
  *  * CScriptID: TX_SCRIPTHASH destination
- *  A CTxDestination is the internal data type encoded in a ravencoin address
+ *  A CTxDestination is the internal data type encoded in a fecalcoin address
  */
 typedef boost::variant<CNoDestination, CKeyID, CScriptID> CTxDestination;
 
@@ -144,4 +144,4 @@ CScript GetScriptForMultisig(int nRequired, const std::vector<CPubKey>& keys);
  */
 CScript GetScriptForWitness(const CScript& redeemscript);
 
-#endif // RAVEN_SCRIPT_STANDARD_H
+#endif // FECAL_SCRIPT_STANDARD_H

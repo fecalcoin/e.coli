@@ -1,13 +1,13 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/raven-config.h"
+#include "config/fecal-config.h"
 #endif
 
-#include "ravengui.h"
+#include "fecalgui.h"
 
 #include "chainparams.h"
 #include "clientmodel.h"
@@ -96,7 +96,7 @@ static void InitMessage(const std::string &message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("raven-core", psz).toStdString();
+    return QCoreApplication::translate("fecal-core", psz).toStdString();
 }
 
 static QString GetLangTerritory()
@@ -143,11 +143,11 @@ static void initTranslations(QTranslator &qtTranslatorBase, QTranslator &qtTrans
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         QApplication::installTranslator(&qtTranslator);
 
-    // Load e.g. raven_de.qm (shortcut "de" needs to be defined in raven.qrc)
+    // Load e.g. fecal_de.qm (shortcut "de" needs to be defined in fecal.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         QApplication::installTranslator(&translatorBase);
 
-    // Load e.g. raven_de_DE.qm (shortcut "de_DE" needs to be defined in raven.qrc)
+    // Load e.g. fecal_de_DE.qm (shortcut "de_DE" needs to be defined in fecal.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         QApplication::installTranslator(&translator);
 }
@@ -174,7 +174,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
 }
 #endif
 
-/** Class encapsulating Raven Core startup and shutdown.
+/** Class encapsulating Fecal E.coli startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
 class RavenCore: public QObject
@@ -267,7 +267,7 @@ private:
     void startThread();
 };
 
-#include "raven.moc"
+#include "fecal.moc"
 
 RavenCore::RavenCore():
     QObject()
@@ -518,7 +518,7 @@ void RavenApplication::initializeResult(bool success)
 
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
-        // raven: URIs or payment requests:
+        // fecal: URIs or payment requests:
         connect(paymentServer, SIGNAL(receivedPaymentRequest(SendCoinsRecipient)),
                          window, SLOT(handlePaymentRequest(SendCoinsRecipient)));
         connect(window, SIGNAL(receivedURI(QString)),
@@ -551,7 +551,7 @@ WId RavenApplication::getMainWinId() const
     return window->winId();
 }
 
-#ifndef RAVEN_QT_TEST
+#ifndef FECAL_QT_TEST
 int main(int argc, char *argv[])
 {
     SetupEnvironment();
@@ -569,8 +569,8 @@ int main(int argc, char *argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
 
-    Q_INIT_RESOURCE(raven);
-    Q_INIT_RESOURCE(raven_locale);
+    Q_INIT_RESOURCE(fecal);
+    Q_INIT_RESOURCE(fecal_locale);
 
     RavenApplication app(argc, argv);
 #if QT_VERSION > 0x050100
@@ -626,7 +626,7 @@ int main(int argc, char *argv[])
     if (!Intro::pickDataDirectory())
         return EXIT_SUCCESS;
 
-    /// 6. Determine availability of data directory and parse raven.conf
+    /// 6. Determine availability of data directory and parse fecal.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!fs::is_directory(GetDataDir(false)))
     {
@@ -635,7 +635,7 @@ int main(int argc, char *argv[])
         return EXIT_FAILURE;
     }
     try {
-        gArgs.ReadConfigFile(gArgs.GetArg("-conf", RAVEN_CONF_FILENAME));
+        gArgs.ReadConfigFile(gArgs.GetArg("-conf", FECAL_CONF_FILENAME));
     } catch (const std::exception& e) {
         QMessageBox::critical(0, QObject::tr(PACKAGE_NAME),
                               QObject::tr("Error: Cannot parse configuration file: %1. Only use key=value syntax.").arg(e.what()));
@@ -678,7 +678,7 @@ int main(int argc, char *argv[])
         exit(EXIT_SUCCESS);
 
     // Start up the payment server early, too, so impatient users that click on
-    // raven: links repeatedly have their payment requests routed to this process:
+    // fecal: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 
@@ -743,4 +743,4 @@ int main(int argc, char *argv[])
     }
     return rv;
 }
-#endif // RAVEN_QT_TEST
+#endif // FECAL_QT_TEST

@@ -1,11 +1,11 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "ravenamountfield.h"
+#include "fecalamountfield.h"
 
-#include "ravenunits.h"
+#include "fecalunits.h"
 #include "guiconstants.h"
 #include "qvaluecombobox.h"
 #include "platformstyle.h"
@@ -27,7 +27,7 @@ class AmountSpinBox: public QAbstractSpinBox
 public:
     explicit AmountSpinBox(QWidget *parent):
         QAbstractSpinBox(parent),
-        currentUnit(RavenUnits::RVN),
+        currentUnit(RavenUnits::SHIT),
         singleStep(100000), // satoshis
         assetUnit(-1)
     {
@@ -119,7 +119,7 @@ public:
 
             const QFontMetrics fm(fontMetrics());
             int h = lineEdit()->minimumSizeHint().height();
-            int w = fm.width(RavenUnits::format(RavenUnits::RVN, RavenUnits::maxMoney(), false, RavenUnits::separatorAlways, assetUnit));
+            int w = fm.width(RavenUnits::format(RavenUnits::SHIT, RavenUnits::maxMoney(), false, RavenUnits::separatorAlways, assetUnit));
             w += 2; // cursor blinking space
 
             QStyleOptionSpinBox opt;
@@ -217,7 +217,7 @@ Q_SIGNALS:
     void valueChanged();
 };
 
-#include "ravenamountfield.moc"
+#include "fecalamountfield.moc"
 
 RavenAmountField::RavenAmountField(QWidget *parent) :
     QWidget(parent),

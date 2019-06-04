@@ -3,13 +3,13 @@ Description=Raven's distributed currency daemon
 After=network.target
 
 [Service]
-User=raven
-Group=raven
+User=fecal
+Group=fecal
 
 Type=forking
-PIDFile=/var/lib/ravend/ravend.pid
-ExecStart=/usr/bin/ravend -daemon -pid=/var/lib/ravend/ravend.pid \
--conf=/etc/raven/raven.conf -datadir=/var/lib/ravend -disablewallet
+PIDFile=/var/lib/fecald/fecald.pid
+ExecStart=/usr/bin/fecald -daemon -pid=/var/lib/fecald/fecald.pid \
+-conf=/etc/fecal/fecal.conf -datadir=/var/lib/fecald -disablewallet
 
 Restart=always
 PrivateTmp=true

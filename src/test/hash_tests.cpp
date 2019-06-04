@@ -1,11 +1,11 @@
 // Copyright (c) 2013-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "hash.h"
 #include "utilstrencodings.h"
-#include "test/test_raven.h"
+#include "test/test_fecal.h"
 #include "consensus/merkle.h"
 
 #include <vector>

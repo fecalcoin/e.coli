@@ -163,11 +163,11 @@
     </message>
     <message>
         <source>&amp;Sending addresses...</source>
-        <translation>&amp;ที่เก็บเงิน ที่จะส่ง raven</translation>
+        <translation>&amp;ที่เก็บเงิน ที่จะส่ง fecal</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
-        <translation>&amp;ที่เก็บเงิน ที่จะรับ raven</translation>
+        <translation>&amp;ที่เก็บเงิน ที่จะรับ fecal</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <source>Sign messages with your Raven addresses to prove you own them</source>
-        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Raven เพื่อแสดงว่าท่านเป็นเจ้าของ raven นี้จริง</translation>
+        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Raven เพื่อแสดงว่าท่านเป็นเจ้าของ fecal นี้จริง</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Raven addresses</source>
@@ -254,20 +254,20 @@
         <translation>แถบเครื่องมือ</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and raven: URIs)</source>
-        <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ raven: URIs)</translation>
+        <source>Request payments (generates QR codes and fecal: URIs)</source>
+        <translation>เรียกเก็บ การชำระเงิน (สร้าง QR codes และ fecal: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง raven ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง fecal ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ raven เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ fecal เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
-        <source>Open a raven: URI or payment request</source>
-        <translation>เปิด raven: URI หรือ การเรียกเก็บเงิน (การเรียกให้ชำระเงิน)</translation>
+        <source>Open a fecal: URI or payment request</source>
+        <translation>เปิด fecal: URI หรือ การเรียกเก็บเงิน (การเรียกให้ชำระเงิน)</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -916,7 +916,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>fecal-core</name>
     <message>
         <source>Options:</source>
         <translation>ตัวเลือก:</translation>

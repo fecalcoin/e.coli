@@ -1,10 +1,10 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_QT_RAVENUNITS_H
-#define RAVEN_QT_RAVENUNITS_H
+#ifndef FECAL_QT_FECALUNITS_H
+#define FECAL_QT_FECALUNITS_H
 
 #include "amount.h"
 
@@ -58,13 +58,13 @@ public:
     explicit RavenUnits(QObject *parent);
 
     /** Raven units.
-      @note Source: https://en.raven.it/wiki/Units . Please add only sensible ones
+      @note Source: https://en.fecal.it/wiki/Units . Please add only sensible ones
      */
     enum Unit
     {
-        RVN,
-        mRVN,
-        uRVN
+        SHIT,
+        mSHIT,
+        uSHIT
     };
 
     enum SeparatorStyle
@@ -136,4 +136,4 @@ private:
 };
 typedef RavenUnits::Unit RavenUnit;
 
-#endif // RAVEN_QT_RAVENUNITS_H
+#endif // FECAL_QT_FECALUNITS_H

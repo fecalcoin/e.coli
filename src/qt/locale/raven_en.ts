@@ -211,7 +211,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR RAVENS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FECALS&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -227,7 +227,7 @@
     </message>
     <message>
         <location line="-56"/>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ravens from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your fecals from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -299,7 +299,7 @@
 <context>
     <name>RavenGUI</name>
     <message>
-        <location filename="../ravengui.cpp" line="+357"/>
+        <location filename="../fecalgui.cpp" line="+357"/>
         <source>Sign &amp;message...</source>
         <translation>Sign &amp;message...</translation>
     </message>
@@ -525,7 +525,7 @@
     </message>
     <message>
         <location line="-158"/>
-        <source>Request payments (generates QR codes and raven: URIs)</source>
+        <source>Request payments (generates QR codes and fecal: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -540,7 +540,7 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a raven: URI or payment request</source>
+        <source>Open a fecal: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -690,7 +690,7 @@
         <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../raven.cpp" line="+534"/>
+        <location filename="../fecal.cpp" line="+534"/>
         <source>A fatal error occurred. Raven can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1153,12 +1153,12 @@
     </message>
     <message>
         <location line="+119"/>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the raven network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the fecal network, as detailed below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
-        <source>Attempting to spend ravens that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend fecals that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1677,7 +1677,7 @@
     </message>
     <message>
         <location line="-402"/>
-        <source>Cannot start raven: click-to-pay handler</source>
+        <source>Cannot start fecal: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1815,7 +1815,7 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../ravenunits.cpp" line="+176"/>
+        <location filename="../fecalunits.cpp" line="+176"/>
         <source>Amount</source>
         <translation type="unfinished">Amount</translation>
     </message>
@@ -1915,7 +1915,7 @@
         </translation>
     </message>
     <message>
-        <location filename="../raven.cpp" line="+178"/>
+        <location filename="../fecal.cpp" line="+178"/>
         <source>%1 didn&apos;t yet exit safely...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2705,7 +2705,7 @@
     <message>
         <location line="+84"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for raven transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for fecal transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3003,7 +3003,7 @@
     </message>
     <message>
         <location line="-1021"/>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less ravens than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less fecals than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3033,7 +3033,7 @@
     </message>
     <message>
         <location line="+47"/>
-        <source>A message that was attached to the raven: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Raven network.</source>
+        <source>A message that was attached to the fecal: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Raven network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3090,7 +3090,7 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>You can sign messages/agreements with your addresses to prove you can receive ravens sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive fecals sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3876,7 +3876,7 @@
 <context>
     <name>UnitDisplayStatusBarControl</name>
     <message>
-        <location filename="../ravengui.cpp" line="+129"/>
+        <location filename="../fecalgui.cpp" line="+129"/>
         <source>Unit to show amounts in. Click to select another unit.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3988,9 +3988,9 @@
     </message>
 </context>
 <context>
-    <name>raven-core</name>
+    <name>fecal-core</name>
     <message>
-        <location filename="../ravenstrings.cpp" line="+343"/>
+        <location filename="../fecalstrings.cpp" line="+343"/>
         <source>Options:</source>
         <translation>Options:</translation>
     </message>
@@ -4066,8 +4066,8 @@
     </message>
     <message>
         <location line="-386"/>
-        <source>Raven Core</source>
-        <translation type="unfinished">Raven Core</translation>
+        <source>Fecal E.coli</source>
+        <translation type="unfinished">Fecal E.coli</translation>
     </message>
     <message>
         <location line="+1"/>

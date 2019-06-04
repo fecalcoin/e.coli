@@ -206,8 +206,8 @@
         <translation>Barra de ferramentas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and raven: URIs)</source>
-        <translation>Solicitar pagos (xenera códigos QR e raven: URIs)</translation>
+        <source>Request payments (generates QR codes and fecal: URIs)</source>
+        <translation>Solicitar pagos (xenera códigos QR e fecal: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -218,8 +218,8 @@
         <translation>Amosar a listaxe de etiquetas e direccións para recibir empregadas</translation>
     </message>
     <message>
-        <source>Open a raven: URI or payment request</source>
-        <translation>Abrir un raven: URI ou solicitude de pago</translation>
+        <source>Open a fecal: URI or payment request</source>
+        <translation>Abrir un fecal: URI ou solicitude de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1002,7 +1002,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>fecal-core</name>
     <message>
         <source>Options:</source>
         <translation>Opcións:</translation>
@@ -1028,7 +1028,7 @@
         <translation>Executar no fondo como un demo e aceptar comandos</translation>
     </message>
     <message>
-        <source>Raven Core</source>
+        <source>Fecal E.coli</source>
         <translation>Core de Raven</translation>
     </message>
     <message>

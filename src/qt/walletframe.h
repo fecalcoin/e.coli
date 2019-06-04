@@ -1,10 +1,10 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_QT_WALLETFRAME_H
-#define RAVEN_QT_WALLETFRAME_H
+#ifndef FECAL_QT_WALLETFRAME_H
+#define FECAL_QT_WALLETFRAME_H
 
 #include <QFrame>
 #include <QMap>
@@ -93,13 +93,13 @@ public Q_SLOTS:
     /** Pass on signal over requested out-of-sync-warning information */
     void outOfSyncWarningClicked();
 
-    /** RVN START */
+    /** SHIT START */
 
     /** Switch to assets page */
     void gotoAssetsPage();
     void gotoCreateAssetsPage();
     void gotoManageAssetsPage();
-    /** RVN END */
+    /** SHIT END */
 };
 
-#endif // RAVEN_QT_WALLETFRAME_H
+#endif // FECAL_QT_WALLETFRAME_H

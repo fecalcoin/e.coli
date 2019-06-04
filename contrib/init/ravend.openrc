@@ -2,41 +2,41 @@
 
 # backward compatibility for existing gentoo layout 
 #
-if [ -d "/var/lib/raven/.raven" ]; then
-	RAVEND_DEFAULT_DATADIR="/var/lib/raven/.raven"
+if [ -d "/var/lib/fecal/.fecal" ]; then
+	FECALD_DEFAULT_DATADIR="/var/lib/fecal/.fecal"
 else
-	RAVEND_DEFAULT_DATADIR="/var/lib/ravend"
+	FECALD_DEFAULT_DATADIR="/var/lib/fecald"
 fi
 
-RAVEND_CONFIGFILE=${RAVEND_CONFIGFILE:-/etc/raven/raven.conf}
-RAVEND_PIDDIR=${RAVEND_PIDDIR:-/var/run/ravend}
-RAVEND_PIDFILE=${RAVEND_PIDFILE:-${RAVEND_PIDDIR}/ravend.pid}
-RAVEND_DATADIR=${RAVEND_DATADIR:-${RAVEND_DEFAULT_DATADIR}}
-RAVEND_USER=${RAVEND_USER:-${RAVEN_USER:-raven}}
-RAVEND_GROUP=${RAVEND_GROUP:-raven}
-RAVEND_BIN=${RAVEND_BIN:-/usr/bin/ravend}
-RAVEND_NICE=${RAVEND_NICE:-${NICELEVEL:-0}}
-RAVEND_OPTS="${RAVEND_OPTS:-${RAVEN_OPTS}}"
+FECALD_CONFIGFILE=${FECALD_CONFIGFILE:-/etc/fecal/fecal.conf}
+FECALD_PIDDIR=${FECALD_PIDDIR:-/var/run/fecald}
+FECALD_PIDFILE=${FECALD_PIDFILE:-${FECALD_PIDDIR}/fecald.pid}
+FECALD_DATADIR=${FECALD_DATADIR:-${FECALD_DEFAULT_DATADIR}}
+FECALD_USER=${FECALD_USER:-${FECAL_USER:-fecal}}
+FECALD_GROUP=${FECALD_GROUP:-fecal}
+FECALD_BIN=${FECALD_BIN:-/usr/bin/fecald}
+FECALD_NICE=${FECALD_NICE:-${NICELEVEL:-0}}
+FECALD_OPTS="${FECALD_OPTS:-${FECAL_OPTS}}"
 
-name="Raven Core Daemon"
+name="Fecal E.coli Daemon"
 description="Raven cryptocurrency P2P network daemon"
 
-command="/usr/bin/ravend"
-command_args="-pid=\"${RAVEND_PIDFILE}\" \
-		-conf=\"${RAVEND_CONFIGFILE}\" \
-		-datadir=\"${RAVEND_DATADIR}\" \
+command="/usr/bin/fecald"
+command_args="-pid=\"${FECALD_PIDFILE}\" \
+		-conf=\"${FECALD_CONFIGFILE}\" \
+		-datadir=\"${FECALD_DATADIR}\" \
 		-daemon \
-		${RAVEND_OPTS}"
+		${FECALD_OPTS}"
 
-required_files="${RAVEND_CONFIGFILE}"
-start_stop_daemon_args="-u ${RAVEND_USER} \
-			-N ${RAVEND_NICE} -w 2000"
-pidfile="${RAVEND_PIDFILE}"
+required_files="${FECALD_CONFIGFILE}"
+start_stop_daemon_args="-u ${FECALD_USER} \
+			-N ${FECALD_NICE} -w 2000"
+pidfile="${FECALD_PIDFILE}"
 
 # The retry schedule to use when stopping the daemon. Could be either
 # a timeout in seconds or multiple signal/timeout pairs (like
 # "SIGKILL/180 SIGTERM/300")
-retry="${RAVEND_SIGTERM_TIMEOUT}"
+retry="${FECALD_SIGTERM_TIMEOUT}"
 
 depend() {
 	need localmount net
@@ -50,29 +50,29 @@ start_pre() {
 	checkpath \
 	-d \
 	--mode 0750 \
-	--owner "${RAVEND_USER}:${RAVEND_GROUP}" \
-	"${RAVEND_DATADIR}"
+	--owner "${FECALD_USER}:${FECALD_GROUP}" \
+	"${FECALD_DATADIR}"
 
 	checkpath \
 	-d \
 	--mode 0755 \
-	--owner "${RAVEND_USER}:${RAVEND_GROUP}" \
-	"${RAVEND_PIDDIR}"
+	--owner "${FECALD_USER}:${FECALD_GROUP}" \
+	"${FECALD_PIDDIR}"
 
 	checkpath -f \
-	-o ${RAVEND_USER}:${RAVEND_GROUP} \
+	-o ${FECALD_USER}:${FECALD_GROUP} \
 	-m 0660 \
-	${RAVEND_CONFIGFILE}
+	${FECALD_CONFIGFILE}
 
 	checkconfig || return 1
 }
 
 checkconfig()
 {
-	if ! grep -qs '^rpcpassword=' "${RAVEND_CONFIGFILE}" ; then
+	if ! grep -qs '^rpcpassword=' "${FECALD_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run ravend."
-		eerror "The setting must appear in ${RAVEND_CONFIGFILE}"
+		eerror "ERROR: You must set a secure rpcpassword to run fecald."
+		eerror "The setting must appear in ${FECALD_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
 		eerror "and must not be the same as the rpcuser setting."

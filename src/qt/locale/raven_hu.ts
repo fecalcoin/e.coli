@@ -246,8 +246,8 @@
         <translation>Fül eszköztár</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and raven: URIs)</source>
-        <translation>Fizetési kérelem (QR-kódot és "raven:" URI azonosítót hoz létre)</translation>
+        <source>Request payments (generates QR codes and fecal: URIs)</source>
+        <translation>Fizetési kérelem (QR-kódot és "fecal:" URI azonosítót hoz létre)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -258,8 +258,8 @@
         <translation>A használt fogadó címek és címkék megtekintése</translation>
     </message>
     <message>
-        <source>Open a raven: URI or payment request</source>
-        <translation>"raven:" URI azonosító vagy fizetési kérelem megnyitása</translation>
+        <source>Open a fecal: URI or payment request</source>
+        <translation>"fecal:" URI azonosító vagy fizetési kérelem megnyitása</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1376,7 +1376,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>fecal-core</name>
     <message>
         <source>Options:</source>
         <translation>Opciók
@@ -1406,8 +1406,8 @@
 </translation>
     </message>
     <message>
-        <source>Raven Core</source>
-        <translation>Raven Core</translation>
+        <source>Fecal E.coli</source>
+        <translation>Fecal E.coli</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
@@ -1561,7 +1561,7 @@
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Nincs elég ravenod.</translation>
+        <translation>Nincs elég fecalod.</translation>
     </message>
     <message>
         <source>Loading block index...</source>

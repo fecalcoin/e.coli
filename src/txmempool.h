@@ -1,11 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2017 The Fecal E.coli developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_TXMEMPOOL_H
-#define RAVEN_TXMEMPOOL_H
+#ifndef FECAL_TXMEMPOOL_H
+#define FECAL_TXMEMPOOL_H
 
 #include <memory>
 #include <set>
@@ -805,4 +805,4 @@ struct DisconnectedBlockTransactions {
     }
 };
 
-#endif // RAVEN_TXMEMPOOL_H
+#endif // FECAL_TXMEMPOOL_H
