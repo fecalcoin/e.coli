@@ -139,7 +139,7 @@ Fecalcoin repo's [root README](https://github.com/RavenProject/Fecalcoin/blob/ma
 - Discuss on the [FecalcoinTalk](https://www.fecalcointalk.org/) forums, in the [Development & Technical Discussion board](https://www.fecalcointalk.org/?forum=661517).
 - Discuss on chat [Discord](https://discord.gg/DUkcBst), [Telegram](https://t.me/FecalcoinDev) or [Reddit](https://www.reddit.com/r/Fecalcoin/).
 - Find out more on the [Fecalcoin Wiki](https://fecal.wiki/wiki/Fecalcoin_Wiki)
-- Visit the project home [Fecalcoin.org](https://fecalcoin.org)
+- Visit the project home [Fecalcoin.com](https://fecalcoin.com)
 
 ### Miscellaneous
 - [Assets Attribution](https://github.com/RavenProject/Fecalcoin/blob/master/doc/assets-attribution.md)

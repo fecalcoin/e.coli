@@ -84,7 +84,7 @@ Ensure gitian-builder is up-to-date:
 
     pushd ./gitian-builder
     mkdir -p inputs
-    wget -P inputs https://fecalcoin.org/cfields/osslsigncode-Backports-to-1.7.1.patch
+    wget -P inputs https://fecalcoin.com/cfields/osslsigncode-Backports-to-1.7.1.patch
     wget -P inputs http://downloads.sourceforge.net/project/osslsigncode/osslsigncode/osslsigncode-1.7.1.tar.gz
     popd
 
@@ -292,7 +292,7 @@ fecal.org (see below for fecal.org update instructions).
 
   - fecal-dev and fecal-core-dev mailing list
 
-  - Fecal E.coli announcements list https://fecalcoin.org/en/list/announcements/join/
+  - Fecal E.coli announcements list https://fecalcoin.com/en/list/announcements/join/
 
   - fecalcore.org blog post
 

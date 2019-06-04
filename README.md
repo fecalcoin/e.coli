@@ -1,7 +1,7 @@
 Fecal E.coli integration/staging tree
 =====================================
 
-https://fecalcoin.org
+https://fecalcoin.com
 
 What is Fecalcoin?
 ----------------

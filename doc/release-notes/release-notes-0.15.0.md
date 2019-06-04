@@ -11,7 +11,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://fecalcoin.org/en/list/announcements/join/>
+  <https://fecalcoin.com/en/list/announcements/join/>
 
 How to Upgrade
 ==============

@@ -175,7 +175,7 @@ public:
 
         vSeeds.emplace_back("seed-fecal.bitactivate.com", false);
         vSeeds.emplace_back("seed-fecal.fecalcoin.com", false);
-        vSeeds.emplace_back("seed-fecal.fecalcoin.org", false);
+        vSeeds.emplace_back("seed-fecal.fecalcoin.com", false);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,60);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,122);
@@ -348,7 +348,7 @@ public:
 
         vSeeds.emplace_back("seed-testnet-fecal.bitactivate.com", false);
         vSeeds.emplace_back("seed-testnet-fecal.fecalcoin.com", false);
-        vSeeds.emplace_back("seed-testnet-fecal.fecalcoin.org", false);
+        vSeeds.emplace_back("seed-testnet-fecal.fecalcoin.com", false);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
