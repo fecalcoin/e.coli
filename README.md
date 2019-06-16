@@ -1,4 +1,6 @@
 Fecal E.coli integration/staging tree
+
+financial equity coin and lending / economic.codification operation layer i
 =====================================
 
 https://fecalcoin.com
