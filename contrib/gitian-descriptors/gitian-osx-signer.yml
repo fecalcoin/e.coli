@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/fecal-core/fecal-detached-sigs.git"
+- "url": "https://github.com/fecalcoin/fecal-detached-sigs.git"
   "dir": "signature"
 files:
 - "fecal-osx-unsigned.tar.gz"

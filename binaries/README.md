@@ -1,3 +1,3 @@
 Releases have been moved to:
 
-https://github.com/fecalProject/Fecalcoin/releases/latest
+https://github.com/Fecalcoin/e.coli/releases/latest

@@ -4,8 +4,6 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 '''
 Fecal base58 encoding and decoding.
-
-Based on https://fecaltalk.org/index.php?topic=1026.0 (public domain)
 '''
 import hashlib
 
@@ -98,7 +96,6 @@ def get_bcaddress_version(strAddress):
     return ord(version)
 
 if __name__ == '__main__':
-    # Test case (from http://gitorious.org/fecal/python-base58.git)
     assert get_bcaddress_version('15VjRaDX9zpbA8LVnbrCAFzrVzN7ixHNsC') is 0
     _ohai = 'o hai'.encode('ascii')
     _tmp = b58encode(_ohai)

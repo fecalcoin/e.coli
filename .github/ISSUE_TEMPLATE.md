@@ -2,9 +2,9 @@
 
 This issue tracker is only for technical issues related to bitcoin-core.
 
-General fecalcoin questions and/or support requests and are best directed to the [Fecalcoin Discord](https://discord.gg/GwtXdyc).
+General fecalcoin questions and/or support requests and are best directed to [Fecalcoin Freenode](irc://#fecalcoin@freenode.net).
 
-For reporting security issues, please direct message one of the core developers in discord.
+For reporting security issues, please direct message one of the core developers on freenode.
 
 ### Describe the issue
 

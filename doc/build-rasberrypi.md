@@ -36,7 +36,7 @@ sudo make install
 # Build Fecalcoin
 ```
 cd ~/build/
-git clone https://github.com/RavenProject/Fecalcoin
+git clone https://github.com/Fecalcoin/E.coli
 cd Fecalcoin/
 ./autogen.sh
 ./configure --disable-tests --with-gui=no CPPFLAGS="-I/usr/local/BerkeleyDB.4.8/include -O2" LDFLAGS="-L/usr/local/BerkeleyDB.4.8/lib"

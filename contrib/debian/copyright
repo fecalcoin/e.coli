@@ -1,13 +1,13 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Fecal
 Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
- irc://#fecal@freenode.net
-Source: https://github.com/RavenProject/Fecalcoin
+ irc://#fecalcoin@freenode.net
+Source: https://github.com/Fecalcoin
 
 Files: *
 Copyright: 2009-2017, Fecal E.coli Developers
 License: Expat
-Comment: The Fecal E.coli Developers encompasses the current developers listed on fecal.org,
+Comment: The Fecal E.coli Developers encompasses the current developers listed on fecalcoin.com,
          as well as the numerous contributors to the project.
 
 Files: debian/*
